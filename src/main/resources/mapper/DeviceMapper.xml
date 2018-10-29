@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.xd.ridelab.mapper.device.DeviceMapper">
+    <!--查询设备的信息-->
+
+    <sql id="BASE_COLUMN">
+        DEVICE_ID,DEVICE_IDENTIFIER,DEVICE_LONGITUDE,DEVICE_LATITUDE,FK_PRODUCT_ID,DEVICE_DATA,TIME_STAMP
+    </sql>
+
+    <select id="selectAllDevice" resultType="edu.xd.ridelab.vo.DeviceVO">
+        SELECT
+          DEVICE_ID as deviceId,
+          DEVICE_IDENTIFIER as deviceIdentifier,
+          DEVICE_LONGITUDE as deviceLongitude,
+          DEVICE_LATITUDE as deviceLatitude,
+          FK_PRODUCT_ID as productId,
+          DEVICE_DATA as deviceData,
+          TIME_STAMP as timeStamp
+        FROM
+          DEVICE
+    </select>
+
+    <select id="selectByProductId" resultType="edu.xd.ridelab.vo.DeviceVO">
+        SELECT
+          DEVICE_ID as deviceId,
+          DEVICE_IDENTIFIER as deviceIdentifier,
+          DEVICE_LONGITUDE as deviceLongitude,
+          DEVICE_LATITUDE as deviceLatitude,
+          FK_PRODUCT_ID as productId,
+          DEVICE_DATA as deviceData,
+          TIME_STAMP as timeStamp
+        FROM
+          DEVICE
+        WHERE FK_PRODUCT_ID = #{productId}
+    </select>
+
+    <select id="selectByPrimaryKey" resultType="edu.xd.ridelab.vo.DeviceVO">
+        SELECT
+          DEVICE_ID as deviceId,
+          DEVICE_IDENTIFIER as deviceIdentifier,
+          DEVICE_LONGITUDE as deviceLongitude,
+          DEVICE_LATITUDE as deviceLatitude,
+          FK_PRODUCT_ID as productId,
+          DEVICE_DATA as deviceData,
+          TIME_STAMP as timeStamp
+        FROM
+          DEVICE
+        WHERE DEVICE_ID = #{deviceId}
+    </select>
+
+    <insert id="insert" parameterType="edu.xd.ridelab.vo.DeviceVO">
+        insert into DEVICE (DEVICE_ID,DEVICE_IDENTIFIER,DEVICE_LONGITUDE,DEVICE_LATITUDE,FK_PRODUCT_ID,DEVICE_DATA,TIME_STAMP)
+          values (#{deviceId,jdbcType=BIGINT}, #{deviceIdentifier,jdbcType=VARCHAR}, #{deviceLongitude,jdbcType=VARCHAR},
+                  #{deviceLatitude,jdbcType=VARCHAR}, #{productId,jdbcType=BIGINT}, #{deviceData,jdbcType=VARCHAR}, #{timeStamp,jdbcType=TIMESTAMP}
+          )
+    </insert>
+
+    <update id="updateByPrimaryKey" parameterType="edu.xd.ridelab.vo.DeviceVO">
+        update DEVICE
+        <set>
+            <if test="deviceIdentifier != null">
+                DEVICE_IDENTIFIER = #{deviceIdentifier,jdbcType=VARCHAR},
+            </if>
+            <if test="deviceLongitude != null">
+                DEVICE_LONGITUDE = #{deviceLongitude,jdbcType=VARCHAR},
+            </if>
+            <if test="deviceLatitude != null">
+                DEVICE_LATITUDE = #{deviceLatitude,jdbcType=VARCHAR},
+            </if>
+            <if test="productId != null">
+                FK_PRODUCT_ID = #{productId,jdbcType=BIGINT},
+            </if>
+            <if test="deviceData != null">
+                DEVICE_DATA = #{deviceData,jdbcType=VARCHAR},
+            </if>
+            <if test="timeStamp != null">
+                TIME_STAMP = #{timeStamp,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where DEVICE_ID = #{deviceId,jdbcType=BIGINT}
+
+    </update>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        delete from DEVICE
+          where DEVICE_ID = #{deviceId,jdbcType=BIGINT}
+    </delete>
+</mapper>

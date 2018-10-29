@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.xd.ridelab.mapper.devicemonitor.DeviceMonitorMapper">
+    <select id="getAllDevice" resultType="edu.xd.ridelab.vo.DeviceVO">
+        SELECT DEVICE_ID AS deviceId,DEVICE_IDENTIFIER AS deviceIdentifier,DEVICE_LONGITUDE AS deviceLongitude,
+        DEVICE_LATITUDE AS deviceLatitude,FK_PRODUCT_ID AS productId,DEVICE_DATA AS deviceData,TIME_STAMP AS timeStamp
+        FROM DEVICE
+        limit #{offset},#{pageNum}
+    </select>
+    </mapper>

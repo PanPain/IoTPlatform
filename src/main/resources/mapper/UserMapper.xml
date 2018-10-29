@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="edu.xd.ridelab.mapper.UserMapper" >
+    <resultMap id="BaseResultMap" type="edu.xd.ridelab.model.UserModel" >
+        <id column="USER_ID" property="userId" jdbcType="BIGINT" />
+        <result column="USER_NAME" property="userName" jdbcType="VARCHAR" />
+        <result column="USER_PASSWORD" property="userPassword" jdbcType="VARCHAR" />
+        <result column="USER_PHONE" property="userPhone" jdbcType="VARCHAR" />
+        <result column="USER_EMAIL" property="userEmail" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        USER_ID,USER_NAME,USER_PASSWORD,USER_PHONE,USER_EMAIL
+    </sql>
+
+    <select id="selectById" resultMap="BaseResultMap" >
+    select
+    <include refid="Base_Column_List"/>
+    from USER
+    where USER_ID = #{userId, jdbcType=BIGINT}
+  </select>
+    <select id="selectByUserName" resultMap="BaseResultMap" >
+    select
+    <include refid="Base_Column_List"/>
+    from USER
+    where USER_NAME = #{userName, jdbcType=VARCHAR}
+  </select>
+
+</mapper>

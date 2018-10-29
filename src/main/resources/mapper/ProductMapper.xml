@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.xd.ridelab.mapper.product.ProductMapper">
+    <!--查询某个用户的信息-->
+    <select id="getProductsByUserId" parameterType="java.lang.Long" resultType="edu.xd.ridelab.model.ProductBriefInfoModel">
+        SELECT PRODUCT_ID AS productId,PRODUCT_NAME AS productName,
+                PRODUCT_MANUFACTURER AS productManufacturer,PRODUCT_CODE AS productCode,
+                PRODUCT_DESC AS productDesc
+        FROM PRODUCT
+        WHERE  FK_USER_ID = #{userId}
+    </select>
+
+    <select id="getProductInfoByProductId" parameterType="java.lang.Long" resultType="edu.xd.ridelab.vo.ProductVO">
+        SELECT  PRODUCT_ID AS productId,FK_USER_ID AS fkUserId, PRODUCT_NAME AS productName,
+                PRODUCT_MANUFACTURER AS productManufacturer,PRODUCT_CODE AS productCode,
+                PRODUCT_DESC AS productDesc, DEVICE_MODEL AS deviceModel
+        FROM PRODUCT
+        WHERE PRODUCT_ID = #{productId}
+    </select>
+    <delete id="deleteProductByProductId" parameterType="java.lang.Long" >
+        DELETE
+        FROM PRODUCT
+        WHERE PRODUCT_ID = #{productId}
+    </delete>
+    <insert id="addProductWithUserId" useGeneratedKeys="true" keyProperty="id" parameterType="edu.xd.ridelab.vo.ProductVO">
+        INSERT INTO PRODUCT (FK_USER_ID, PRODUCT_NAME,
+                              PRODUCT_CODE, PRODUCT_DESC,
+                              PRODUCT_MANUFACTURER, DEVICE_MODEL)
+        VALUES (#{fkUserId}, #{productName},
+                #{productCode}, #{productDesc},
+                 #{productManufacturer}, #{deviceModel})
+    </insert>
+</mapper>

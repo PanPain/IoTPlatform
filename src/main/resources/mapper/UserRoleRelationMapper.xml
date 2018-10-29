@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="edu.xd.ridelab.mapper.UserRoleRelationMapper" >
+    <resultMap id="BaseResultMap" type="edu.xd.ridelab.vo.UserRoleRelationVO" >
+        <id column="RELATION_ID" property="relationId" jdbcType="BIGINT" />
+        <result column="FK_USER_ID" property="fkUserId" jdbcType="BIGINT" />
+        <result column="FK_ROLE_ID" property="fkRoleId" jdbcType="BIGINT" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        RELATION_ID,FK_USER_ID,FK_ROLE_ID
+    </sql>
+
+    <select id="selectRoleIdByUserId" resultType="java.lang.Long">
+        select
+        FK_ROLE_ID
+        from USER_ROLE_RELATION
+        where
+        FK_USER_ID = #{userId, jdbcType = BIGINT}
+    </select>
+
+</mapper>
