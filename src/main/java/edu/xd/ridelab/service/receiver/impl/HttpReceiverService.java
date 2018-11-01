@@ -7,6 +7,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.http.*;
+import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
@@ -21,6 +22,7 @@ import java.util.function.Consumer;
 
 import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 
+@Slf4j
 @Service
 @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class HttpReceiverService implements ReceiverService {
