@@ -22,4 +22,6 @@ public interface ReceiverService {
 
   void stop(Long id);
 
+  boolean isRunning(Long id);
+
 }

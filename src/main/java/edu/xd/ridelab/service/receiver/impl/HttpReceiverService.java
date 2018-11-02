@@ -90,12 +90,22 @@ public class HttpReceiverService implements ReceiverService {
         stop(id);
       }
     });
+    // TODO: return a future
   }
 
   @Override
   public synchronized void stop(Long id) {
     val shutdown = shutdowns.get(id);
-    if (shutdown != null) shutdown.run();
+    if (shutdown != null) {
+      // TODO: maybe block
+      shutdown.run();
+      shutdowns.remove(id);
+    }
+  }
+
+  @Override
+  public boolean isRunning(Long id) {
+    return shutdowns.containsKey(id);
   }
 
 }
