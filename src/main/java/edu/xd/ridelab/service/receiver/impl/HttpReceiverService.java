@@ -39,55 +39,61 @@ public class HttpReceiverService implements ReceiverService {
     shutdowns.put(id, () -> {
       throw new IllegalStateException("Just a placeholder");
     });
-    pool.submit(() -> {
-      val bossGroup = new NioEventLoopGroup();
-      val workerGroup = new NioEventLoopGroup();
-      shutdowns.put(id, () -> {
-        workerGroup.shutdownGracefully();
-        bossGroup.shutdownGracefully();
-      });
-      try {
-        val bootstrap = new ServerBootstrap();
-        bootstrap.option(ChannelOption.SO_BACKLOG, 1024);
-        bootstrap.group(bossGroup, workerGroup).
-          channel(NioServerSocketChannel.class).
-          childHandler(new ChannelInitializer<SocketChannel>() {
-            @Override
-            public void initChannel(SocketChannel channel) {
-              channel.pipeline().
-                addLast(new HttpServerCodec()).
-                addLast(new SimpleChannelInboundHandler<Object>() {
-                  @Override
-                  protected void channelRead0(ChannelHandlerContext context, Object o) {
-                    if (o instanceof HttpRequest) {
-                      val request = (HttpRequest) o;
-                      if (!request.method().equals(HttpMethod.POST)) {
-                        context.write(new DefaultFullHttpResponse(HTTP_1_1, HttpResponseStatus.BAD_REQUEST));
-                      }
-                      if (HttpUtil.is100ContinueExpected(request)) {
-                        context.write(new DefaultFullHttpResponse(HTTP_1_1, HttpResponseStatus.CONTINUE));
-                      }
+    pool.submit(new Runnable() {
+      @Override
+      public void run() {
+        val bossGroup = new NioEventLoopGroup();
+        val workerGroup = new NioEventLoopGroup();
+        shutdowns.put(id, new Runnable() {
+          @Override
+          public void run() {
+            workerGroup.shutdownGracefully();
+            bossGroup.shutdownGracefully();
+          }
+        });
+        try {
+          val bootstrap = new ServerBootstrap();
+          bootstrap.option(ChannelOption.SO_BACKLOG, 1024);
+          bootstrap.group(bossGroup, workerGroup).
+                  channel(NioServerSocketChannel.class).
+                  childHandler(new ChannelInitializer<SocketChannel>() {
+                    @Override
+                    public void initChannel(SocketChannel channel) {
+                      channel.pipeline().
+                              addLast(new HttpServerCodec()).
+                              addLast(new SimpleChannelInboundHandler<Object>() {
+                                @Override
+                                protected void channelRead0(ChannelHandlerContext context, Object o) {
+                                  if (o instanceof HttpRequest) {
+                                    val request = (HttpRequest) o;
+                                    if (!request.method().equals(HttpMethod.POST)) {
+                                      context.write(new DefaultFullHttpResponse(HTTP_1_1, HttpResponseStatus.BAD_REQUEST));
+                                    }
+                                    if (HttpUtil.is100ContinueExpected(request)) {
+                                      context.write(new DefaultFullHttpResponse(HTTP_1_1, HttpResponseStatus.CONTINUE));
+                                    }
+                                  }
+                                  if (o instanceof LastHttpContent) {
+                                    val request = (LastHttpContent) o;
+                                    val packet = DataPacket.builder().
+                                            clientAddress(context.channel().remoteAddress()).
+                                            time(Instant.now()).
+                                            data(request.content()).
+                                            build();
+                                    consumer.accept(packet);
+                                    context.writeAndFlush(new DefaultFullHttpResponse(HTTP_1_1, HttpResponseStatus.OK)).
+                                            addListener(ChannelFutureListener.CLOSE);
+                                  }
+                                }
+                              });
                     }
-                    if (o instanceof LastHttpContent) {
-                      val request = (LastHttpContent) o;
-                      val packet = DataPacket.builder().
-                        clientAddress(context.channel().remoteAddress()).
-                        time(Instant.now()).
-                        data(request.content()).
-                        build();
-                      consumer.accept(packet);
-                      context.writeAndFlush(new DefaultFullHttpResponse(HTTP_1_1, HttpResponseStatus.OK)).
-                        addListener(ChannelFutureListener.CLOSE);
-                    }
-                  }
-                });
-            }
-          });
-        bootstrap.bind(port).sync().channel().closeFuture().sync();
-      } catch (InterruptedException e) {
-        throw new RuntimeException(e);
-      } finally {
-        stop(id);
+                  });
+          bootstrap.bind(port).sync().channel().closeFuture().sync();
+        } catch (InterruptedException e) {
+          throw new RuntimeException(e);
+        } finally {
+          HttpReceiverService.this.stop(id);
+        }
       }
     });
     // TODO: return a future
