@@ -73,4 +73,9 @@ public class DeviceServiceImpl implements DeviceService {
     public List<DeviceVO> getDeviceByProductId(Long productId) throws Exception {
         return deviceMapper.selectByProductId(productId);
     }
+
+    @Override
+    public DeviceVO getDeviceByIndentifierAndProductId(Long productId, String identifier) throws Exception {
+        return deviceMapper.selectByIdentifierAndProductId(identifier, productId);
+    }
 }

@@ -26,12 +26,21 @@ public class ReceiverController {
     // TODO: get port from configurations
     val port = 9999;
 
-    Consumer<ReceiverService.DataPacket> handler = packet -> {
-      // TODO: write to several databases
-      // if (config.shouldSaveNewestToMysql) deviceService.save(...);
-      // if (config.shouldSaveHistoryToMysql) deviceHistoryService.save(...);
-      // if (config.shouldSaveHistoryToHBase) deviceHistoryService.save(...);
-      logger.debug("Received data for product {}: {}", id, packet);
+    Consumer<ReceiverService.DataPacket> handler = new Consumer<ReceiverService.DataPacket>() {
+      @Override
+      public void accept(ReceiverService.DataPacket packet) {
+
+        try {
+          receiverService.handle(packet);
+        } catch (Exception e) {
+          e.printStackTrace();
+        }
+        // TODO: write to several databases
+        // if (config.shouldSaveNewestToMysql) deviceService.save(...);
+        // if (config.shouldSaveHistoryToMysql) deviceHistoryService.save(...);
+        // if (config.shouldSaveHistoryToHBase) deviceHistoryService.save(...);
+        logger.debug("Received data for product {}: {}", id, packet);
+      }
     };
 
     receiverService.start(id, port, handler);

@@ -84,7 +84,7 @@ public class DeviceModelVO {
         return modelName;
     }
 
-    public void setModoelName(String modelName) {
+    public void setModelName(String modelName) {
         this.modelName = modelName;
     }
 

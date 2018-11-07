@@ -17,6 +17,8 @@ public interface DeviceMapper {
 
     DeviceVO selectByPrimaryKey(@Param("deviceId") long primaryKey);
 
+    DeviceVO selectByIdentifierAndProductId(@Param("deviceIdentifier") String deviceIdentifier, @Param("productId") long productId);
+
     int insert(DeviceVO deviceVO);
 
     int deleteByPrimaryKey(@Param("deviceId") long primaryKey);

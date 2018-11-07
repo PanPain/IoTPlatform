@@ -20,6 +20,8 @@ public interface ReceiverService {
 
   void start(Long id, Integer port, Consumer<DataPacket> consumer);
 
+  void handle(DataPacket packet) throws Exception;
+
   void stop(Long id);
 
   boolean isRunning(Long id);
