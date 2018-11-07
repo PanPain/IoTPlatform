@@ -29,10 +29,12 @@ public class ReceiverController {
     Consumer<ReceiverService.DataPacket> handler = new Consumer<ReceiverService.DataPacket>() {
       @Override
       public void accept(ReceiverService.DataPacket packet) {
-//        val buf = packet.getData();
-//        byte[] bytes = new byte[buf.readableBytes()];
-//        buf.readBytes(bytes);
-//        System.out.println(new String(bytes));
+
+        try {
+          receiverService.handle(packet);
+        } catch (Exception e) {
+          e.printStackTrace();
+        }
         // TODO: write to several databases
         // if (config.shouldSaveNewestToMysql) deviceService.save(...);
         // if (config.shouldSaveHistoryToMysql) deviceHistoryService.save(...);

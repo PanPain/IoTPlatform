@@ -1,6 +1,8 @@
 package edu.xd.ridelab.service.receiver.impl;
 
+import edu.xd.ridelab.service.device.DeviceService;
 import edu.xd.ridelab.service.receiver.ReceiverService;
+import edu.xd.ridelab.vo.DeviceVO;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -9,6 +11,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.http.*;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
@@ -27,6 +30,9 @@ import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class HttpReceiverService implements ReceiverService {
 
+  @Autowired
+  DeviceService deviceService;
+
   private ExecutorService pool = Executors.newFixedThreadPool(32);
 
   private Map<Long, Runnable> shutdowns = new HashMap<>();
@@ -36,8 +42,11 @@ public class HttpReceiverService implements ReceiverService {
     if (shutdowns.containsKey(id)) {
       throw new IllegalStateException("Instance for" + id + " is running");
     }
-    shutdowns.put(id, () -> {
-      throw new IllegalStateException("Just a placeholder");
+    shutdowns.put(id, new Runnable() {
+      @Override
+      public void run() {
+        throw new IllegalStateException("Just a placeholder");
+      }
     });
     pool.submit(new Runnable() {
       @Override
@@ -97,6 +106,30 @@ public class HttpReceiverService implements ReceiverService {
       }
     });
     // TODO: return a future
+  }
+
+  @Override
+  public void handle(DataPacket packet) {
+    val buf = packet.getData();
+    byte[] bytes = new byte[buf.readableBytes()];
+    buf.readBytes(bytes);
+    //TODO: maybe compress, decrect
+    String[] result = new String(bytes).split("&");
+
+    Long productId = Long.parseLong(result[0]); //用&做分隔符，第一项为产品ID
+    String deviceIdentifier = result[1];  //第二项为设备标识符
+    String data = result[2]; //第三项为设备数据
+
+    DeviceVO deviceVO = null;
+    try {
+      deviceVO = deviceService.getDeviceByIndentifierAndProductId(productId, deviceIdentifier);
+      deviceVO.setDeviceData(data);
+      deviceService.updateDevice(deviceVO);
+    } catch (NullPointerException e) {
+      throw new NullPointerException("no corresponding device");
+    } catch (Exception e) {
+      throw new NumberFormatException("wrong productId format");
+    }
   }
 
   @Override

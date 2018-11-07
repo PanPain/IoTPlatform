@@ -50,6 +50,20 @@
         WHERE DEVICE_ID = #{deviceId}
     </select>
 
+    <select id="selectByIdentifierAndProductId" resultType="edu.xd.ridelab.vo.DeviceVO">
+        SELECT
+          DEVICE_ID as deviceId,
+          DEVICE_IDENTIFIER as deviceIdentifier,
+          DEVICE_LONGITUDE as deviceLongitude,
+          DEVICE_LATITUDE as deviceLatitude,
+          FK_PRODUCT_ID as productId,
+          DEVICE_DATA as deviceData,
+          TIME_STAMP as timeStamp
+        FROM
+          DEVICE
+        WHERE DEVICE_IDENTIFIER = #{deviceIdentifier} AND FK_PRODUCT_ID = #{productId}
+    </select>
+
     <insert id="insert" parameterType="edu.xd.ridelab.vo.DeviceVO">
         insert into DEVICE (DEVICE_ID,DEVICE_IDENTIFIER,DEVICE_LONGITUDE,DEVICE_LATITUDE,FK_PRODUCT_ID,DEVICE_DATA,TIME_STAMP)
           values (#{deviceId,jdbcType=BIGINT}, #{deviceIdentifier,jdbcType=VARCHAR}, #{deviceLongitude,jdbcType=VARCHAR},

@@ -21,4 +21,6 @@ public interface DeviceService {
     DeviceVO getDeviceById(Long deviceId) throws Exception;
 
     List<DeviceVO> getDeviceByProductId(Long productId) throws Exception;
+
+    DeviceVO getDeviceByIndentifierAndProductId(Long productId, String identifier) throws Exception;
 }
