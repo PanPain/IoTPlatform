@@ -26,13 +26,25 @@ public class ReceiverController {
     // TODO: get port from configurations
     val port = 9999;
 
+    ResponseResult responseResult = new ResponseResult();
+
     Consumer<ReceiverService.DataPacket> handler = new Consumer<ReceiverService.DataPacket>() {
       @Override
       public void accept(ReceiverService.DataPacket packet) {
 
         try {
           receiverService.handle(packet);
+
+          responseResult.setSuccess(true);
+          responseResult.setCode(ReceiverCode.OPEN_RECEIVER_SUCCESS.getCode());
+          responseResult.setMessage(ReceiverCode.OPEN_RECEIVER_SUCCESS.getMessage());
+
         } catch (Exception e) {
+
+          responseResult.setSuccess(false);
+          responseResult.setCode(ReceiverCode.OPEN_RECEIVER_FAILURE.getCode());
+          responseResult.setMessage(ReceiverCode.OPEN_RECEIVER_FAILURE.getMessage());
+
           e.printStackTrace();
         }
         // TODO: write to several databases
@@ -45,14 +57,21 @@ public class ReceiverController {
 
     receiverService.start(id, port, handler);
 
-    return new ResponseResult();
+    return responseResult;
   }
 
   @ApiParam(name = "id", value = "Product ID")
   @PostMapping("/{id}/action/stop")
   public ResponseResult stop(@PathVariable Long id) {
     receiverService.stop(id);
-    return new ResponseResult();
+
+    ResponseResult responseResult = new ResponseResult();
+
+    responseResult.setSuccess(true);
+    responseResult.setCode(ReceiverCode.CLOSE_RECEIVER_SUCCESS.getCode());
+    responseResult.setMessage(ReceiverCode.CLOSE_RECEIVER_SUCCESS.getMessage());
+
+    return responseResult;
   }
 
   @ApiParam(name = "id", value = "Product ID")
