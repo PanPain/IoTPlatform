@@ -58,6 +58,7 @@ public class SecurityController {
     @PreAuthorize("hasAnyRole('ADMIN','USER')")
     public String index(){return "login";}
 
+
     @GetMapping("/logout")
     public String logout() {
         return "login";

@@ -18,6 +18,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.Instant;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -117,19 +118,20 @@ public class HttpReceiverService implements ReceiverService {
     String[] result = new String(bytes).split("&");
 
     Long productId = Long.parseLong(result[0]); //用&做分隔符，第一项为产品ID
-    String deviceIdentifier = result[1];  //第二项为设备标识符
-    String data = result[2]; //第三项为设备数据
 
-    DeviceVO deviceVO = null;
-    try {
-      deviceVO = deviceService.getDeviceByIndentifierAndProductId(productId, deviceIdentifier);
-      deviceVO.setDeviceData(data);
-      deviceService.updateDevice(deviceVO);
-    } catch (NullPointerException e) {
-      throw new NullPointerException("no corresponding device");
-    } catch (Exception e) {
-      throw new NumberFormatException("wrong productId format");
-    }
+      String deviceIdentifier = result[1];  //第二项为设备标识符
+      String data = result[2]; //第三项为设备数据
+
+      DeviceVO deviceVO = null;
+      try {
+        deviceVO = deviceService.getDeviceByIndentifierAndProductId(productId, deviceIdentifier);
+        deviceVO.setDeviceData(data);
+        deviceService.updateDevice(deviceVO);
+      } catch (NullPointerException e) {
+        throw new NullPointerException("no corresponding device");
+      } catch (Exception e) {
+        throw new NumberFormatException("wrong productId format");
+      }
   }
 
   @Override

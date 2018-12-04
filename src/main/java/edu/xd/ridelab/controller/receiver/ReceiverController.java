@@ -9,6 +9,8 @@ import lombok.val;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Consumer;
 
 @Slf4j
@@ -19,15 +21,18 @@ public class ReceiverController {
 
   private final ReceiverService receiverService;
 
+  private static List openedProducts = new ArrayList();  // 记录开启接收的产品
+
   @ApiParam(name = "id", value = "Product ID")
   @PostMapping("/{id}/action/start")
   public ResponseResult start(@PathVariable Long id) {
 
     // TODO: get port from configurations
-    val port = 9999;
+    val port = (int)(50000 + id);
 
     ResponseResult responseResult = new ResponseResult();
 
+    openedProducts.add(id);
     Consumer<ReceiverService.DataPacket> handler = new Consumer<ReceiverService.DataPacket>() {
       @Override
       public void accept(ReceiverService.DataPacket packet) {
@@ -63,6 +68,8 @@ public class ReceiverController {
   @ApiParam(name = "id", value = "Product ID")
   @PostMapping("/{id}/action/stop")
   public ResponseResult stop(@PathVariable Long id) {
+    openedProducts.remove(id);
+
     receiverService.stop(id);
 
     ResponseResult responseResult = new ResponseResult();

@@ -17,7 +17,7 @@ function addMarker(mfData) {
     map.centerAndZoom(new BMap.Point(108.93, 34.27), 15);  // 设置中心点
     map.enableScrollWheelZoom(true);
     // 创建图标对象
-    var myIcon = new BMap.Icon("../../assets/images/markers.png", new BMap.Size(23, 25),);
+    var myIcon = new BMap.Icon("../../assets/images/markers.png", new BMap.Size(23, 25));
     //循环建立标注点
     for(var i=0, pointsLen =mfData.length; i<pointsLen; i++) {
         var point = new BMap.Point(mfData[i].device.deviceLongitude, mfData[i].device.deviceLatitude); //将标注点转化成地图上的点
