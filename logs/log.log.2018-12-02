@@ -1,0 +1,213 @@
+2018-12-02 15:28:34,810-[TS] INFO background-preinit org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+   2018-12-02 15:28:34,929-[TS] INFO main edu.xd.ridelab.IotPlatformApplication - Starting IotPlatformApplication on Aska with PID 27576 (started by Administrator in F:\项目\IotPlatform)
+   2018-12-02 15:28:34,930-[TS] INFO main edu.xd.ridelab.IotPlatformApplication - No active profile set, falling back to default profiles: default
+   2018-12-02 15:28:34,970-[TS] INFO main org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3444d69d: startup date [Sun Dec 02 15:28:34 CST 2018]; root of context hierarchy
+   2018-12-02 15:28:35,845-[TS] INFO main org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+   2018-12-02 15:28:35,876-[TS] INFO main org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+   2018-12-02 15:28:36,238-[TS] INFO main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c4d7521f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2018-12-02 15:28:36,919-[TS] INFO main org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+   2018-12-02 15:28:37,213-[TS] INFO localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2246 ms
+   2018-12-02 15:28:37,662-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+   2018-12-02 15:28:37,663-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'sessionRepositoryFilter' to: [/*]
+   2018-12-02 15:28:37,663-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+   2018-12-02 15:28:37,663-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+   2018-12-02 15:28:37,663-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+   2018-12-02 15:28:37,664-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+   2018-12-02 15:28:37,664-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+   2018-12-02 15:28:38,058-[TS] INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+   2018-12-02 15:28:38,071-[TS] INFO main org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+   2018-12-02 15:28:38,133-[TS] INFO main org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+   2018-12-02 15:28:38,134-[TS] INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+   2018-12-02 15:28:38,169-[TS] INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+   2018-12-02 15:28:39,605-[TS] INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+   2018-12-02 15:28:39,770-[TS] INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+   2018-12-02 15:28:40,553-[TS] INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4dac121d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a97b17c, org.springframework.security.web.header.HeaderWriterFilter@568750b7, org.springframework.security.web.header.HeaderWriterFilter@93824eb, org.springframework.security.web.authentication.logout.LogoutFilter@1e79d43, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2dbc408c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71cea1b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@467233e4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e28fee1, org.springframework.security.web.session.SessionManagementFilter@77c1e611, org.springframework.security.web.access.ExceptionTranslationFilter@4997552e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e60f18]
+   2018-12-02 15:28:40,661-[TS] INFO main io.lettuce.core.EpollProvider - Starting without optional epoll library
+   2018-12-02 15:28:40,663-[TS] INFO main io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+   2018-12-02 15:28:40,992-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-12-02 15:28:41,209-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3444d69d: startup date [Sun Dec 02 15:28:34 CST 2018]; root of context hierarchy
+   2018-12-02 15:28:41,241-[TS] WARN main org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+   2018-12-02 15:28:41,277-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/addDevice],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.addDevice(edu.xd.ridelab.vo.DeviceVO)
+   2018-12-02 15:28:41,277-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/searchDevices],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.searchDevices(int,int)
+   2018-12-02 15:28:41,278-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/updateDevice],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.updateDevice(edu.xd.ridelab.vo.DeviceVO)
+   2018-12-02 15:28:41,278-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/deleteDevice],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.deleteDevice(java.lang.Long)
+   2018-12-02 15:28:41,278-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/getDevDetail],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.getDeviceDetail(java.lang.Long)
+   2018-12-02 15:28:41,278-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/getDevByProduct],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.getDevByProduct(java.lang.Long)
+   2018-12-02 15:28:41,279-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/devicemonitor/getDeviceLocationInfo],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.devicemonitor.DeviceMonitorController.getDeviceLocationInfo(int,int)
+   2018-12-02 15:28:41,279-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/devicemonitor/getDeviceStatusInfo],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.devicemonitor.DeviceMonitorController.getDeviceStatusInfo(int,int)
+   2018-12-02 15:28:41,279-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/devicemonitor/getAllDeviceInfo],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.devicemonitor.DeviceMonitorController.getAllDeviceInfo(int,int)
+   2018-12-02 15:28:41,280-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/addProduct],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.addProduct(edu.xd.ridelab.model.ProductModel,javax.servlet.http.HttpSession)
+   2018-12-02 15:28:41,280-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/getProductInfo],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.getProductInfo(long)
+   2018-12-02 15:28:41,280-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/deleteProduct],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.deleteProduct(long)
+   2018-12-02 15:28:41,280-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/getAddedProducts],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.getAddedProducts(javax.servlet.http.HttpSession)
+   2018-12-02 15:28:41,283-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/receiver/{id}/action/start],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.receiver.ReceiverController.start(java.lang.Long)
+   2018-12-02 15:28:41,283-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/receiver/{id}/action/stop],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.receiver.ReceiverController.stop(java.lang.Long)
+   2018-12-02 15:28:41,283-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/receiver/{id}/running],methods=[GET]}" onto public java.lang.Boolean edu.xd.ridelab.controller.receiver.ReceiverController.running(java.lang.Long)
+   2018-12-02 15:28:41,284-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/index],methods=[POST]}" onto public java.lang.String edu.xd.ridelab.controller.security.SecurityController.index(javax.servlet.http.HttpSession)
+   2018-12-02 15:28:41,284-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login],methods=[GET]}" onto public java.lang.String edu.xd.ridelab.controller.security.SecurityController.login()
+   2018-12-02 15:28:41,284-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String edu.xd.ridelab.controller.security.SecurityController.logout()
+   2018-12-02 15:28:41,284-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/getself],methods=[GET]}" onto public org.springframework.http.ResponseEntity edu.xd.ridelab.controller.security.SecurityController.getSelf(java.security.Principal)
+   2018-12-02 15:28:41,287-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+   2018-12-02 15:28:41,287-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+   2018-12-02 15:28:41,305-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+   2018-12-02 15:28:41,316-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-12-02 15:28:41,317-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-12-02 15:28:41,882-[TS] INFO main org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+   2018-12-02 15:28:41,884-[TS] INFO main org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+   2018-12-02 15:28:41,888-[TS] INFO main org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [org.apache.commons.dbcp2:name=dataSource,type=BasicDataSource]
+   2018-12-02 15:28:41,893-[TS] INFO main org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+   2018-12-02 15:28:41,940-[TS] INFO main org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+   2018-12-02 15:28:41,962-[TS] INFO main org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+   2018-12-02 15:28:41,965-[TS] INFO main edu.xd.ridelab.IotPlatformApplication - Started IotPlatformApplication in 7.33 seconds (JVM running for 8.574)
+   2018-12-02 15:28:52,638-[TS] INFO http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+   2018-12-02 15:28:52,729-[TS] INFO http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 90 ms
+   2018-12-02 15:28:53,067-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-12-02 15:28:53
+URL:http://localhost:8080/login
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.login
+ARGS:[]
+
+   2018-12-02 15:28:53,179-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："login"
+
+   2018-12-02 15:28:53,179-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：113ms
+
+   2018-12-02 15:28:54,023-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-12-02 15:28:54
+URL:http://localhost:8080/login
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.login
+ARGS:[]
+
+   2018-12-02 15:28:54,025-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："login"
+
+   2018-12-02 15:28:54,025-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：2ms
+
+   2018-12-02 15:28:57,227-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-12-02 15:28:57
+URL:http://localhost:8080/index
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.index
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@22fac65d]
+	username:root
+	password:123456
+
+   2018-12-02 15:28:57,230-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："firstPage"
+
+   2018-12-02 15:28:57,230-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：3ms
+
+   2018-12-02 15:29:01,853-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-12-02 15:29:01
+URL:http://localhost:8080/device/searchDevices
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
+ARGS:[1, 10]
+
+   2018-12-02 15:29:01,920-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{temperature:28, on_off:true, speed:2, mode:true}","deviceId":9,"deviceIdentifier":"air-001","deviceLatitude":"33","deviceLongitude":"22","productId":17,"timeStamp":15905000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+
+   2018-12-02 15:29:01,920-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：67ms
+
+   2018-12-02 15:29:01,982-[TS] INFO http-nio-8080-exec-8 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-12-02 15:29:01
+URL:http://localhost:8080/product/getAddedProducts
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.product.ProductController.getAddedProducts
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@4366d7d7]
+
+   2018-12-02 15:29:02,067-[TS] INFO http-nio-8080-exec-8 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":{"list":[{"productCode":"HBWX","productDesc":"河钢集团炼钢器","productId":1,"productManufacturer":"河北沃享","productName":"炼钢器"},{"productCode":"CSCP","productDesc":"测试产品","productId":2,"productManufacturer":"河北沃享","productName":"测试产品"},{"productCode":"Haire","productDesc":"测试设备","productId":17,"productManufacturer":"海尔","productName":"空调"}],"userId":1},"meta":{"code":"02001","message":"已添加的产品简略信息查询成功","success":true}}
+
+   2018-12-02 15:29:02,067-[TS] INFO http-nio-8080-exec-8 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：85ms
+
+   2018-12-02 15:29:06,723-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-12-02 15:29:06
+URL:http://localhost:8080/product/getAddedProducts
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.product.ProductController.getAddedProducts
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@6c83b1a1]
+
+   2018-12-02 15:29:06,728-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":{"list":[{"productCode":"HBWX","productDesc":"河钢集团炼钢器","productId":1,"productManufacturer":"河北沃享","productName":"炼钢器"},{"productCode":"CSCP","productDesc":"测试产品","productId":2,"productManufacturer":"河北沃享","productName":"测试产品"},{"productCode":"Haire","productDesc":"测试设备","productId":17,"productManufacturer":"海尔","productName":"空调"}],"userId":1},"meta":{"code":"02001","message":"已添加的产品简略信息查询成功","success":true}}
+
+   2018-12-02 15:29:06,729-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：6ms
+
+   2018-12-02 15:29:14,731-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-12-02 15:29:14
+URL:http://localhost:8080/device/searchDevices
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
+ARGS:[1, 10]
+
+   2018-12-02 15:29:14,737-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{temperature:28, on_off:true, speed:2, mode:true}","deviceId":9,"deviceIdentifier":"air-001","deviceLatitude":"33","deviceLongitude":"22","productId":17,"timeStamp":15905000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+
+   2018-12-02 15:29:14,737-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：6ms
+
+   2018-12-02 15:29:14,754-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-12-02 15:29:14
+URL:http://localhost:8080/product/getAddedProducts
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.product.ProductController.getAddedProducts
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@6a7dea94]
+
+   2018-12-02 15:29:14,759-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":{"list":[{"productCode":"HBWX","productDesc":"河钢集团炼钢器","productId":1,"productManufacturer":"河北沃享","productName":"炼钢器"},{"productCode":"CSCP","productDesc":"测试产品","productId":2,"productManufacturer":"河北沃享","productName":"测试产品"},{"productCode":"Haire","productDesc":"测试设备","productId":17,"productManufacturer":"海尔","productName":"空调"}],"userId":1},"meta":{"code":"02001","message":"已添加的产品简略信息查询成功","success":true}}
+
+   2018-12-02 15:29:14,760-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：7ms
+
+   2018-12-02 15:29:23,091-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-12-02 15:29:23
+URL:http://localhost:8080/product/getAddedProducts
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.product.ProductController.getAddedProducts
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@3a84e587]
+
+   2018-12-02 15:29:23,096-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":{"list":[{"productCode":"HBWX","productDesc":"河钢集团炼钢器","productId":1,"productManufacturer":"河北沃享","productName":"炼钢器"},{"productCode":"CSCP","productDesc":"测试产品","productId":2,"productManufacturer":"河北沃享","productName":"测试产品"},{"productCode":"Haire","productDesc":"测试设备","productId":17,"productManufacturer":"海尔","productName":"空调"}],"userId":1},"meta":{"code":"02001","message":"已添加的产品简略信息查询成功","success":true}}
+
+   2018-12-02 15:29:23,097-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：6ms
+
+   2018-12-02 15:29:28,541-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-12-02 15:29:28
+URL:http://localhost:8080/device/searchDevices
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
+ARGS:[1, 10]
+
+   2018-12-02 15:29:28,545-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{temperature:28, on_off:true, speed:2, mode:true}","deviceId":9,"deviceIdentifier":"air-001","deviceLatitude":"33","deviceLongitude":"22","productId":17,"timeStamp":15905000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+
+   2018-12-02 15:29:28,545-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：6ms
+
+   2018-12-02 15:29:28,563-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-12-02 15:29:28
+URL:http://localhost:8080/product/getAddedProducts
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.product.ProductController.getAddedProducts
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@2e335730]
+
+   2018-12-02 15:29:28,566-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":{"list":[{"productCode":"HBWX","productDesc":"河钢集团炼钢器","productId":1,"productManufacturer":"河北沃享","productName":"炼钢器"},{"productCode":"CSCP","productDesc":"测试产品","productId":2,"productManufacturer":"河北沃享","productName":"测试产品"},{"productCode":"Haire","productDesc":"测试设备","productId":17,"productManufacturer":"海尔","productName":"空调"}],"userId":1},"meta":{"code":"02001","message":"已添加的产品简略信息查询成功","success":true}}
+
+   2018-12-02 15:29:28,567-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：4ms
+
+   2018-12-02 15:29:33,838-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-12-02 15:29:33
+URL:http://localhost:8080/device/getDevDetail
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.getDeviceDetail
+ARGS:[9]
+	deviceId:9
+
+   2018-12-02 15:29:33,841-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":{"deviceData":"{temperature:28, on_off:true, speed:2, mode:true}","deviceId":9,"deviceIdentifier":"air-001","deviceLatitude":"33","deviceLongitude":"22","productId":17,"timeStamp":15905000},"meta":{"code":"03009","message":"查看设备详情成功","success":true}}
+
+   2018-12-02 15:29:33,842-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：4ms
+
+   

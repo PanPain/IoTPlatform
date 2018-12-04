@@ -1,0 +1,608 @@
+2018-11-05 11:28:33,245-[TS] INFO background-preinit org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+   2018-11-05 11:28:33,721-[TS] INFO main edu.xd.ridelab.IotPlatformApplication - Starting IotPlatformApplication on Aska with PID 8532 (started by Administrator in F:\项目\IotPlatform)
+   2018-11-05 11:28:33,722-[TS] INFO main edu.xd.ridelab.IotPlatformApplication - No active profile set, falling back to default profiles: default
+   2018-11-05 11:28:34,151-[TS] INFO main org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@62e136d3: startup date [Mon Nov 05 11:28:34 CST 2018]; root of context hierarchy
+   2018-11-05 11:28:35,230-[TS] INFO main org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+   2018-11-05 11:28:35,259-[TS] INFO main org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+   2018-11-05 11:28:35,648-[TS] INFO main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a659b0f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2018-11-05 11:28:36,094-[TS] INFO main org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+   2018-11-05 11:28:36,232-[TS] INFO localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2084 ms
+   2018-11-05 11:28:36,642-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+   2018-11-05 11:28:36,642-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'sessionRepositoryFilter' to: [/*]
+   2018-11-05 11:28:36,642-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+   2018-11-05 11:28:36,642-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+   2018-11-05 11:28:36,642-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+   2018-11-05 11:28:36,643-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+   2018-11-05 11:28:36,643-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+   2018-11-05 11:28:37,019-[TS] INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+   2018-11-05 11:28:37,037-[TS] INFO main org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+   2018-11-05 11:28:37,101-[TS] INFO main org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+   2018-11-05 11:28:37,103-[TS] INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+   2018-11-05 11:28:37,137-[TS] INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+   2018-11-05 11:28:37,317-[TS] INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+   2018-11-05 11:28:37,490-[TS] INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+   2018-11-05 11:28:38,152-[TS] INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@318c68d5, org.springframework.security.web.context.SecurityContextPersistenceFilter@4dac121d, org.springframework.security.web.header.HeaderWriterFilter@4cfa83f9, org.springframework.security.web.header.HeaderWriterFilter@78d71df1, org.springframework.security.web.authentication.logout.LogoutFilter@294aba23, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3850e90c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e28fee1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78ec89a6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@321ca237, org.springframework.security.web.session.SessionManagementFilter@a9c5b75, org.springframework.security.web.access.ExceptionTranslationFilter@26837057, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@40113163]
+   2018-11-05 11:28:38,244-[TS] INFO main io.lettuce.core.EpollProvider - Starting without optional epoll library
+   2018-11-05 11:28:38,246-[TS] INFO main io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+   2018-11-05 11:28:38,621-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-11-05 11:28:38,928-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@62e136d3: startup date [Mon Nov 05 11:28:34 CST 2018]; root of context hierarchy
+   2018-11-05 11:28:38,976-[TS] WARN main org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+   2018-11-05 11:28:39,021-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/addDevice],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.addDevice(edu.xd.ridelab.vo.DeviceVO)
+   2018-11-05 11:28:39,022-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/searchDevices],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.searchDevices(int,int)
+   2018-11-05 11:28:39,022-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/updateDevice],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.updateDevice(edu.xd.ridelab.vo.DeviceVO)
+   2018-11-05 11:28:39,022-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/deleteDevice],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.deleteDevice(java.lang.Long)
+   2018-11-05 11:28:39,023-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/getDevDetail],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.getDeviceDetail(java.lang.Long)
+   2018-11-05 11:28:39,023-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/getDevByProduct],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.getDevByProduct(java.lang.Long)
+   2018-11-05 11:28:39,023-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/devicemonitor/getDeviceLocationInfo],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.devicemonitor.DeviceMonitorController.getDeviceLocationInfo(int,int)
+   2018-11-05 11:28:39,024-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/devicemonitor/getDeviceStatusInfo],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.devicemonitor.DeviceMonitorController.getDeviceStatusInfo(int,int)
+   2018-11-05 11:28:39,024-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/devicemonitor/getAllDeviceInfo],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.devicemonitor.DeviceMonitorController.getAllDeviceInfo(int,int)
+   2018-11-05 11:28:39,024-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/addProduct],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.addProduct(edu.xd.ridelab.model.ProductModel,javax.servlet.http.HttpSession)
+   2018-11-05 11:28:39,025-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/getProductInfo],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.getProductInfo(long)
+   2018-11-05 11:28:39,025-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/deleteProduct],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.deleteProduct(long)
+   2018-11-05 11:28:39,025-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/getAddedProducts],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.getAddedProducts(javax.servlet.http.HttpSession)
+   2018-11-05 11:28:39,027-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/receiver/{id}/action/start],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.receiver.ReceiverController.start(java.lang.Long)
+   2018-11-05 11:28:39,028-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/receiver/{id}/action/stop],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.receiver.ReceiverController.stop(java.lang.Long)
+   2018-11-05 11:28:39,028-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/receiver/{id}/running],methods=[GET]}" onto public java.lang.Boolean edu.xd.ridelab.controller.receiver.ReceiverController.running(java.lang.Long)
+   2018-11-05 11:28:39,028-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/index],methods=[POST]}" onto public java.lang.String edu.xd.ridelab.controller.security.SecurityController.index(javax.servlet.http.HttpSession)
+   2018-11-05 11:28:39,029-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login],methods=[GET]}" onto public java.lang.String edu.xd.ridelab.controller.security.SecurityController.login()
+   2018-11-05 11:28:39,029-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String edu.xd.ridelab.controller.security.SecurityController.logout()
+   2018-11-05 11:28:39,029-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/getself],methods=[GET]}" onto public org.springframework.http.ResponseEntity edu.xd.ridelab.controller.security.SecurityController.getSelf(java.security.Principal)
+   2018-11-05 11:28:39,031-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+   2018-11-05 11:28:39,032-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+   2018-11-05 11:28:39,051-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+   2018-11-05 11:28:39,064-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-11-05 11:28:39,064-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-11-05 11:28:39,707-[TS] INFO main org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+   2018-11-05 11:28:39,709-[TS] INFO main org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+   2018-11-05 11:28:39,714-[TS] INFO main org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [org.apache.commons.dbcp2:name=dataSource,type=BasicDataSource]
+   2018-11-05 11:28:39,718-[TS] INFO main org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+   2018-11-05 11:28:39,766-[TS] INFO main org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+   2018-11-05 11:28:39,815-[TS] INFO main org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+   2018-11-05 11:28:39,819-[TS] INFO main edu.xd.ridelab.IotPlatformApplication - Started IotPlatformApplication in 6.865 seconds (JVM running for 8.751)
+   2018-11-05 11:29:38,890-[TS] INFO http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+   2018-11-05 11:29:38,908-[TS] INFO http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+   2018-11-05 11:29:39,054-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:29:39
+URL:http://localhost:8080/login
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.login
+ARGS:[]
+
+   2018-11-05 11:29:39,293-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："login"
+
+   2018-11-05 11:29:39,294-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：242ms
+
+   2018-11-05 11:29:55,418-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:29:55
+URL:http://localhost:8080/login
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.login
+ARGS:[]
+
+   2018-11-05 11:29:55,420-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："login"
+
+   2018-11-05 11:29:55,420-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：2ms
+
+   2018-11-05 11:29:57,736-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:29:57
+URL:http://localhost:8080/index
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.index
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@5eaeaa77]
+	username:root
+	password:123456
+
+   2018-11-05 11:29:57,739-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："firstPage"
+
+   2018-11-05 11:29:57,740-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：4ms
+
+   2018-11-05 11:30:16,571-[TS] WARN http-nio-8080-exec-2 org.springframework.web.servlet.PageNotFound - Request method 'GET' not supported
+   2018-11-05 11:30:28,412-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:30:28
+URL:http://localhost:8080/login
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.login
+ARGS:[]
+
+   2018-11-05 11:30:28,413-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："login"
+
+   2018-11-05 11:30:28,413-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：1ms
+
+   2018-11-05 11:31:33,966-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:31:33
+URL:http://localhost:8080/login
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.login
+ARGS:[]
+
+   2018-11-05 11:31:33,967-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："login"
+
+   2018-11-05 11:31:33,967-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：1ms
+
+   2018-11-05 11:31:34,229-[TS] INFO http-nio-8080-exec-8 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:31:34
+URL:http://localhost:8080/login
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.login
+ARGS:[]
+
+   2018-11-05 11:31:34,229-[TS] INFO http-nio-8080-exec-8 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："login"
+
+   2018-11-05 11:31:34,229-[TS] INFO http-nio-8080-exec-8 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：1ms
+
+   2018-11-05 11:31:43,039-[TS] INFO http-nio-8080-exec-7 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:31:43
+URL:http://localhost:8080/index
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.index
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@7bcc7ca4]
+	username:root
+	password:123456
+
+   2018-11-05 11:31:43,043-[TS] INFO http-nio-8080-exec-7 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："firstPage"
+
+   2018-11-05 11:31:43,043-[TS] INFO http-nio-8080-exec-7 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：4ms
+
+   2018-11-05 11:32:10,199-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:32:10
+URL:http://localhost:8080/index
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.index
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@9b58a72]
+	username:root
+	password:123456
+
+   2018-11-05 11:32:10,202-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："firstPage"
+
+   2018-11-05 11:32:10,202-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：3ms
+
+   2018-11-05 11:35:23,951-[TS] INFO http-nio-8080-exec-8 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:35:23
+URL:http://localhost:8080/index
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.index
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@5867d3f5]
+	username:root
+	password:123456
+
+   2018-11-05 11:35:23,954-[TS] INFO http-nio-8080-exec-8 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："firstPage"
+
+   2018-11-05 11:35:23,955-[TS] INFO http-nio-8080-exec-8 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：4ms
+
+   2018-11-05 11:35:33,434-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:35:33
+URL:http://localhost:8080/index
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.index
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@19f21b54]
+	username:root
+	password:123456
+
+   2018-11-05 11:35:33,439-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："firstPage"
+
+   2018-11-05 11:35:33,439-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：6ms
+
+   2018-11-05 11:37:07,386-[TS] INFO http-nio-8080-exec-8 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:37:07
+URL:http://localhost:8080/login
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.login
+ARGS:[]
+
+   2018-11-05 11:37:07,387-[TS] INFO http-nio-8080-exec-8 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："login"
+
+   2018-11-05 11:37:07,387-[TS] INFO http-nio-8080-exec-8 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：1ms
+
+   2018-11-05 11:39:31,160-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:39:31
+URL:http://localhost:8080/login
+HTTP_METHOD:GET
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.login
+ARGS:[]
+
+   2018-11-05 11:39:31,161-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："login"
+
+   2018-11-05 11:39:31,161-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：1ms
+
+   2018-11-05 11:39:34,025-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:39:34
+URL:http://localhost:8080/index
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.index
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@298e311d]
+	username:root
+	password:123456
+
+   2018-11-05 11:39:34,028-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："firstPage"
+
+   2018-11-05 11:39:34,028-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：3ms
+
+   2018-11-05 11:40:32,047-[TS] INFO http-nio-8080-exec-9 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:40:32
+URL:http://localhost:8080/index
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.index
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@2397577b]
+	username:root
+	password:123456
+
+   2018-11-05 11:40:32,051-[TS] INFO http-nio-8080-exec-9 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："firstPage"
+
+   2018-11-05 11:40:32,051-[TS] INFO http-nio-8080-exec-9 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：4ms
+
+   2018-11-05 11:40:49,838-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:40:49
+URL:http://localhost:8080/index
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.index
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@46527467]
+	username:root
+	password:123456
+
+   2018-11-05 11:40:49,842-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："firstPage"
+
+   2018-11-05 11:40:49,842-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：4ms
+
+   2018-11-05 11:42:58,885-[TS] INFO http-nio-8080-exec-8 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:42:58
+URL:http://localhost:8080/index
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.index
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@773efb86]
+	username:root
+	password:123456
+
+   2018-11-05 11:42:58,888-[TS] INFO http-nio-8080-exec-8 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："firstPage"
+
+   2018-11-05 11:42:58,888-[TS] INFO http-nio-8080-exec-8 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：3ms
+
+   2018-11-05 11:43:53,409-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:43:53
+URL:http://localhost:8080/receiver/1/action/start
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.receiver.ReceiverController.start
+ARGS:[1]
+
+   2018-11-05 11:43:53,412-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{}
+
+   2018-11-05 11:43:53,413-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：4ms
+
+   2018-11-05 11:49:59,595-[TS] INFO background-preinit org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+   2018-11-05 11:49:59,726-[TS] INFO main edu.xd.ridelab.IotPlatformApplication - Starting IotPlatformApplication on Aska with PID 41096 (started by Administrator in F:\项目\IotPlatform)
+   2018-11-05 11:49:59,727-[TS] INFO main edu.xd.ridelab.IotPlatformApplication - No active profile set, falling back to default profiles: default
+   2018-11-05 11:49:59,764-[TS] INFO main org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@461ad730: startup date [Mon Nov 05 11:49:59 CST 2018]; root of context hierarchy
+   2018-11-05 11:50:00,441-[TS] INFO main org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+   2018-11-05 11:50:00,471-[TS] INFO main org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+   2018-11-05 11:50:00,885-[TS] INFO main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$52db545b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2018-11-05 11:50:01,342-[TS] INFO main org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+   2018-11-05 11:50:01,481-[TS] INFO localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1719 ms
+   2018-11-05 11:50:02,045-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+   2018-11-05 11:50:02,046-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'sessionRepositoryFilter' to: [/*]
+   2018-11-05 11:50:02,046-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+   2018-11-05 11:50:02,046-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+   2018-11-05 11:50:02,046-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+   2018-11-05 11:50:02,046-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+   2018-11-05 11:50:02,047-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+   2018-11-05 11:50:02,495-[TS] INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+   2018-11-05 11:50:02,504-[TS] INFO main org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+   2018-11-05 11:50:02,556-[TS] INFO main org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+   2018-11-05 11:50:02,558-[TS] INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+   2018-11-05 11:50:02,589-[TS] INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+   2018-11-05 11:50:02,736-[TS] INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+   2018-11-05 11:50:02,918-[TS] INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+   2018-11-05 11:50:03,715-[TS] INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e158f33, org.springframework.security.web.context.SecurityContextPersistenceFilter@60652518, org.springframework.security.web.header.HeaderWriterFilter@20fcea37, org.springframework.security.web.header.HeaderWriterFilter@1f42366, org.springframework.security.web.authentication.logout.LogoutFilter@27261190, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@485451d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f06ebe0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cc26df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@399af6dc, org.springframework.security.web.session.SessionManagementFilter@4afdfc0f, org.springframework.security.web.access.ExceptionTranslationFilter@1109730f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6f106af8]
+   2018-11-05 11:50:03,815-[TS] INFO main io.lettuce.core.EpollProvider - Starting without optional epoll library
+   2018-11-05 11:50:03,817-[TS] INFO main io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+   2018-11-05 11:50:04,224-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-11-05 11:50:04,478-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@461ad730: startup date [Mon Nov 05 11:49:59 CST 2018]; root of context hierarchy
+   2018-11-05 11:50:04,511-[TS] WARN main org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+   2018-11-05 11:50:04,553-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/searchDevices],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.searchDevices(int,int)
+   2018-11-05 11:50:04,554-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/addDevice],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.addDevice(edu.xd.ridelab.vo.DeviceVO)
+   2018-11-05 11:50:04,555-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/updateDevice],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.updateDevice(edu.xd.ridelab.vo.DeviceVO)
+   2018-11-05 11:50:04,555-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/deleteDevice],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.deleteDevice(java.lang.Long)
+   2018-11-05 11:50:04,555-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/getDevDetail],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.getDeviceDetail(java.lang.Long)
+   2018-11-05 11:50:04,555-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/getDevByProduct],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.getDevByProduct(java.lang.Long)
+   2018-11-05 11:50:04,556-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/devicemonitor/getAllDeviceInfo],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.devicemonitor.DeviceMonitorController.getAllDeviceInfo(int,int)
+   2018-11-05 11:50:04,556-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/devicemonitor/getDeviceLocationInfo],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.devicemonitor.DeviceMonitorController.getDeviceLocationInfo(int,int)
+   2018-11-05 11:50:04,556-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/devicemonitor/getDeviceStatusInfo],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.devicemonitor.DeviceMonitorController.getDeviceStatusInfo(int,int)
+   2018-11-05 11:50:04,557-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/addProduct],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.addProduct(edu.xd.ridelab.model.ProductModel,javax.servlet.http.HttpSession)
+   2018-11-05 11:50:04,557-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/getProductInfo],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.getProductInfo(long)
+   2018-11-05 11:50:04,557-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/deleteProduct],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.deleteProduct(long)
+   2018-11-05 11:50:04,557-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/getAddedProducts],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.getAddedProducts(javax.servlet.http.HttpSession)
+   2018-11-05 11:50:04,561-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/receiver/{id}/action/start],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.receiver.ReceiverController.start(java.lang.Long)
+   2018-11-05 11:50:04,561-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/receiver/{id}/action/stop],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.receiver.ReceiverController.stop(java.lang.Long)
+   2018-11-05 11:50:04,561-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/receiver/{id}/running],methods=[GET]}" onto public java.lang.Boolean edu.xd.ridelab.controller.receiver.ReceiverController.running(java.lang.Long)
+   2018-11-05 11:50:04,562-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/index],methods=[POST]}" onto public java.lang.String edu.xd.ridelab.controller.security.SecurityController.index(javax.servlet.http.HttpSession)
+   2018-11-05 11:50:04,562-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login],methods=[GET]}" onto public java.lang.String edu.xd.ridelab.controller.security.SecurityController.login()
+   2018-11-05 11:50:04,562-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String edu.xd.ridelab.controller.security.SecurityController.logout()
+   2018-11-05 11:50:04,563-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/getself],methods=[GET]}" onto public org.springframework.http.ResponseEntity edu.xd.ridelab.controller.security.SecurityController.getSelf(java.security.Principal)
+   2018-11-05 11:50:04,566-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+   2018-11-05 11:50:04,566-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+   2018-11-05 11:50:04,590-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+   2018-11-05 11:50:04,605-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-11-05 11:50:04,606-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-11-05 11:50:05,335-[TS] INFO main org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+   2018-11-05 11:50:05,337-[TS] INFO main org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+   2018-11-05 11:50:05,344-[TS] INFO main org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [org.apache.commons.dbcp2:name=dataSource,type=BasicDataSource]
+   2018-11-05 11:50:05,349-[TS] INFO main org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+   2018-11-05 11:50:05,399-[TS] INFO main org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+   2018-11-05 11:50:05,425-[TS] INFO main org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+   2018-11-05 11:50:05,429-[TS] INFO main edu.xd.ridelab.IotPlatformApplication - Started IotPlatformApplication in 5.956 seconds (JVM running for 7.223)
+   2018-11-05 11:50:47,264-[TS] INFO http-nio-8080-exec-2 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+   2018-11-05 11:50:47,285-[TS] INFO http-nio-8080-exec-2 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+   2018-11-05 11:50:47,920-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:50:47
+URL:http://localhost:8080/index
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.index
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@1c62149]
+	username:root
+	password:123456
+
+   2018-11-05 11:50:47,964-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："firstPage"
+
+   2018-11-05 11:50:47,964-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：47ms
+
+   2018-11-05 11:51:12,121-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 11:51:12
+URL:http://localhost:8080/receiver/1/action/start
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.receiver.ReceiverController.start
+ARGS:[1]
+
+   2018-11-05 11:51:35,497-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{}
+
+   2018-11-05 11:51:35,497-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：23376ms
+
+   2018-11-05 12:07:08,134-[TS] ERROR pool-2-thread-1 org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task.
+   org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:257)
+	at org.springframework.data.redis.connection.lettuce.LettuceKeyCommands.convertLettuceAccessException(LettuceKeyCommands.java:650)
+	at org.springframework.data.redis.connection.lettuce.LettuceKeyCommands.del(LettuceKeyCommands.java:98)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.del(DefaultedRedisConnection.java:61)
+	at org.springframework.data.redis.core.RedisTemplate.lambda$delete$2(RedisTemplate.java:709)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:224)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:184)
+	at org.springframework.data.redis.core.RedisTemplate.delete(RedisTemplate.java:709)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:133)
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:393)
+	at org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration.lambda$configureTasks$0(RedisHttpSessionConfiguration.java:242)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:62)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy122.del(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceKeyCommands.del(LettuceKeyCommands.java:96)
+	... 18 more
+2018-11-05 12:07:15,522-[TS] INFO background-preinit org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+   2018-11-05 12:07:15,677-[TS] INFO main edu.xd.ridelab.IotPlatformApplication - Starting IotPlatformApplication on Aska with PID 40344 (started by Administrator in F:\项目\IotPlatform)
+   2018-11-05 12:07:15,678-[TS] INFO main edu.xd.ridelab.IotPlatformApplication - No active profile set, falling back to default profiles: default
+   2018-11-05 12:07:15,757-[TS] INFO main org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@70ed52de: startup date [Mon Nov 05 12:07:15 CST 2018]; root of context hierarchy
+   2018-11-05 12:07:16,624-[TS] INFO main org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+   2018-11-05 12:07:16,653-[TS] INFO main org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+   2018-11-05 12:07:17,120-[TS] INFO main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$80560168] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2018-11-05 12:07:17,614-[TS] INFO main org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+   2018-11-05 12:07:17,743-[TS] INFO localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1988 ms
+   2018-11-05 12:07:18,172-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+   2018-11-05 12:07:18,172-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'sessionRepositoryFilter' to: [/*]
+   2018-11-05 12:07:18,173-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+   2018-11-05 12:07:18,173-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+   2018-11-05 12:07:18,173-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+   2018-11-05 12:07:18,173-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+   2018-11-05 12:07:18,173-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+   2018-11-05 12:07:18,561-[TS] INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+   2018-11-05 12:07:18,571-[TS] INFO main org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+   2018-11-05 12:07:18,627-[TS] INFO main org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+   2018-11-05 12:07:18,628-[TS] INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+   2018-11-05 12:07:18,663-[TS] INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+   2018-11-05 12:07:18,810-[TS] INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+   2018-11-05 12:07:18,966-[TS] INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+   2018-11-05 12:07:19,770-[TS] INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c6927f0, org.springframework.security.web.context.SecurityContextPersistenceFilter@d49e8c6, org.springframework.security.web.header.HeaderWriterFilter@5ef2cbe6, org.springframework.security.web.header.HeaderWriterFilter@602298b, org.springframework.security.web.authentication.logout.LogoutFilter@15d88c10, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a2724d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5896cb9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d2def55, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@266da047, org.springframework.security.web.session.SessionManagementFilter@149d7cc6, org.springframework.security.web.access.ExceptionTranslationFilter@774f2992, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1584c019]
+   2018-11-05 12:07:19,873-[TS] INFO main io.lettuce.core.EpollProvider - Starting without optional epoll library
+   2018-11-05 12:07:19,875-[TS] INFO main io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+   2018-11-05 12:07:20,275-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-11-05 12:07:20,550-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@70ed52de: startup date [Mon Nov 05 12:07:15 CST 2018]; root of context hierarchy
+   2018-11-05 12:07:20,584-[TS] WARN main org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+   2018-11-05 12:07:20,632-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/searchDevices],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.searchDevices(int,int)
+   2018-11-05 12:07:20,633-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/addDevice],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.addDevice(edu.xd.ridelab.vo.DeviceVO)
+   2018-11-05 12:07:20,633-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/updateDevice],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.updateDevice(edu.xd.ridelab.vo.DeviceVO)
+   2018-11-05 12:07:20,633-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/deleteDevice],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.deleteDevice(java.lang.Long)
+   2018-11-05 12:07:20,633-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/getDevDetail],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.getDeviceDetail(java.lang.Long)
+   2018-11-05 12:07:20,634-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/getDevByProduct],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.getDevByProduct(java.lang.Long)
+   2018-11-05 12:07:20,634-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/devicemonitor/getAllDeviceInfo],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.devicemonitor.DeviceMonitorController.getAllDeviceInfo(int,int)
+   2018-11-05 12:07:20,634-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/devicemonitor/getDeviceLocationInfo],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.devicemonitor.DeviceMonitorController.getDeviceLocationInfo(int,int)
+   2018-11-05 12:07:20,635-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/devicemonitor/getDeviceStatusInfo],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.devicemonitor.DeviceMonitorController.getDeviceStatusInfo(int,int)
+   2018-11-05 12:07:20,635-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/getAddedProducts],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.getAddedProducts(javax.servlet.http.HttpSession)
+   2018-11-05 12:07:20,635-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/addProduct],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.addProduct(edu.xd.ridelab.model.ProductModel,javax.servlet.http.HttpSession)
+   2018-11-05 12:07:20,635-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/getProductInfo],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.getProductInfo(long)
+   2018-11-05 12:07:20,636-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/deleteProduct],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.deleteProduct(long)
+   2018-11-05 12:07:20,638-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/receiver/{id}/action/start],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.receiver.ReceiverController.start(java.lang.Long)
+   2018-11-05 12:07:20,638-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/receiver/{id}/action/stop],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.receiver.ReceiverController.stop(java.lang.Long)
+   2018-11-05 12:07:20,638-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/receiver/{id}/running],methods=[GET]}" onto public java.lang.Boolean edu.xd.ridelab.controller.receiver.ReceiverController.running(java.lang.Long)
+   2018-11-05 12:07:20,639-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/index],methods=[POST]}" onto public java.lang.String edu.xd.ridelab.controller.security.SecurityController.index(javax.servlet.http.HttpSession)
+   2018-11-05 12:07:20,639-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login],methods=[GET]}" onto public java.lang.String edu.xd.ridelab.controller.security.SecurityController.login()
+   2018-11-05 12:07:20,639-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String edu.xd.ridelab.controller.security.SecurityController.logout()
+   2018-11-05 12:07:20,639-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/getself],methods=[GET]}" onto public org.springframework.http.ResponseEntity edu.xd.ridelab.controller.security.SecurityController.getSelf(java.security.Principal)
+   2018-11-05 12:07:20,643-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+   2018-11-05 12:07:20,643-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+   2018-11-05 12:07:20,666-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+   2018-11-05 12:07:20,683-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-11-05 12:07:20,683-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-11-05 12:07:21,386-[TS] INFO main org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+   2018-11-05 12:07:21,388-[TS] INFO main org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+   2018-11-05 12:07:21,394-[TS] INFO main org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [org.apache.commons.dbcp2:name=dataSource,type=BasicDataSource]
+   2018-11-05 12:07:21,400-[TS] INFO main org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+   2018-11-05 12:07:21,453-[TS] INFO main org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+   2018-11-05 12:07:21,482-[TS] INFO main org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+   2018-11-05 12:07:21,485-[TS] INFO main edu.xd.ridelab.IotPlatformApplication - Started IotPlatformApplication in 6.142 seconds (JVM running for 6.938)
+   2018-11-05 12:07:26,923-[TS] INFO http-nio-8080-exec-2 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+   2018-11-05 12:07:26,943-[TS] INFO http-nio-8080-exec-2 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+   2018-11-05 12:07:27,584-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 12:07:27
+URL:http://localhost:8080/index
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.index
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@2d48645a]
+	username:root
+	password:123456
+
+   2018-11-05 12:07:27,632-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："firstPage"
+
+   2018-11-05 12:07:27,632-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：51ms
+
+   2018-11-05 12:07:33,837-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 12:07:33
+URL:http://localhost:8080/receiver/1/action/start
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.receiver.ReceiverController.start
+ARGS:[1]
+
+   2018-11-05 12:07:33,892-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{}
+
+   2018-11-05 12:07:33,892-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：55ms
+
+   2018-11-05 12:10:33,183-[TS] INFO background-preinit org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+   2018-11-05 12:10:33,305-[TS] INFO main edu.xd.ridelab.IotPlatformApplication - Starting IotPlatformApplication on Aska with PID 29516 (started by Administrator in F:\项目\IotPlatform)
+   2018-11-05 12:10:33,307-[TS] INFO main edu.xd.ridelab.IotPlatformApplication - No active profile set, falling back to default profiles: default
+   2018-11-05 12:10:33,356-[TS] INFO main org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55040f2f: startup date [Mon Nov 05 12:10:33 CST 2018]; root of context hierarchy
+   2018-11-05 12:10:33,988-[TS] INFO main org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+   2018-11-05 12:10:34,014-[TS] INFO main org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+   2018-11-05 12:10:34,376-[TS] INFO main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$128d677d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2018-11-05 12:10:34,837-[TS] INFO main org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+   2018-11-05 12:10:34,963-[TS] INFO localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1609 ms
+   2018-11-05 12:10:35,446-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+   2018-11-05 12:10:35,446-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'sessionRepositoryFilter' to: [/*]
+   2018-11-05 12:10:35,446-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+   2018-11-05 12:10:35,447-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+   2018-11-05 12:10:35,447-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+   2018-11-05 12:10:35,447-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+   2018-11-05 12:10:35,447-[TS] INFO localhost-startStop-1 org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+   2018-11-05 12:10:35,795-[TS] INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+   2018-11-05 12:10:35,804-[TS] INFO main org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+   2018-11-05 12:10:35,849-[TS] INFO main org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+   2018-11-05 12:10:35,851-[TS] INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+   2018-11-05 12:10:35,880-[TS] INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+   2018-11-05 12:10:36,005-[TS] INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+   2018-11-05 12:10:36,139-[TS] INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+   2018-11-05 12:10:36,763-[TS] INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@535b1ae6, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d119405, org.springframework.security.web.header.HeaderWriterFilter@626c19cf, org.springframework.security.web.header.HeaderWriterFilter@72a2312e, org.springframework.security.web.authentication.logout.LogoutFilter@3610f277, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1f95881a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20580d4e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1290ed28, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54a2d96e, org.springframework.security.web.session.SessionManagementFilter@7951c3a2, org.springframework.security.web.access.ExceptionTranslationFilter@5261ec9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a2ab862]
+   2018-11-05 12:10:36,851-[TS] INFO main io.lettuce.core.EpollProvider - Starting without optional epoll library
+   2018-11-05 12:10:36,853-[TS] INFO main io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+   2018-11-05 12:10:37,214-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-11-05 12:10:37,421-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55040f2f: startup date [Mon Nov 05 12:10:33 CST 2018]; root of context hierarchy
+   2018-11-05 12:10:37,451-[TS] WARN main org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+   2018-11-05 12:10:37,487-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/addDevice],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.addDevice(edu.xd.ridelab.vo.DeviceVO)
+   2018-11-05 12:10:37,487-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/searchDevices],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.searchDevices(int,int)
+   2018-11-05 12:10:37,488-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/updateDevice],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.updateDevice(edu.xd.ridelab.vo.DeviceVO)
+   2018-11-05 12:10:37,488-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/deleteDevice],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.deleteDevice(java.lang.Long)
+   2018-11-05 12:10:37,488-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/getDevDetail],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.getDeviceDetail(java.lang.Long)
+   2018-11-05 12:10:37,488-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/device/getDevByProduct],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.device.DeviceController.getDevByProduct(java.lang.Long)
+   2018-11-05 12:10:37,489-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/devicemonitor/getAllDeviceInfo],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.devicemonitor.DeviceMonitorController.getAllDeviceInfo(int,int)
+   2018-11-05 12:10:37,489-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/devicemonitor/getDeviceLocationInfo],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.devicemonitor.DeviceMonitorController.getDeviceLocationInfo(int,int)
+   2018-11-05 12:10:37,489-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/devicemonitor/getDeviceStatusInfo],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.devicemonitor.DeviceMonitorController.getDeviceStatusInfo(int,int)
+   2018-11-05 12:10:37,489-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/addProduct],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.addProduct(edu.xd.ridelab.model.ProductModel,javax.servlet.http.HttpSession)
+   2018-11-05 12:10:37,490-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/getProductInfo],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.getProductInfo(long)
+   2018-11-05 12:10:37,490-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/deleteProduct],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.deleteProduct(long)
+   2018-11-05 12:10:37,490-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/product/getAddedProducts],methods=[GET]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.product.ProductController.getAddedProducts(javax.servlet.http.HttpSession)
+   2018-11-05 12:10:37,492-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/receiver/{id}/action/start],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.receiver.ReceiverController.start(java.lang.Long)
+   2018-11-05 12:10:37,492-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/receiver/{id}/action/stop],methods=[POST]}" onto public edu.xd.ridelab.controller.response.ResponseResult edu.xd.ridelab.controller.receiver.ReceiverController.stop(java.lang.Long)
+   2018-11-05 12:10:37,493-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/receiver/{id}/running],methods=[GET]}" onto public java.lang.Boolean edu.xd.ridelab.controller.receiver.ReceiverController.running(java.lang.Long)
+   2018-11-05 12:10:37,493-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/index],methods=[POST]}" onto public java.lang.String edu.xd.ridelab.controller.security.SecurityController.index(javax.servlet.http.HttpSession)
+   2018-11-05 12:10:37,493-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login],methods=[GET]}" onto public java.lang.String edu.xd.ridelab.controller.security.SecurityController.login()
+   2018-11-05 12:10:37,494-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String edu.xd.ridelab.controller.security.SecurityController.logout()
+   2018-11-05 12:10:37,494-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/getself],methods=[GET]}" onto public org.springframework.http.ResponseEntity edu.xd.ridelab.controller.security.SecurityController.getSelf(java.security.Principal)
+   2018-11-05 12:10:37,496-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+   2018-11-05 12:10:37,497-[TS] INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+   2018-11-05 12:10:37,517-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+   2018-11-05 12:10:37,530-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-11-05 12:10:37,530-[TS] INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-11-05 12:10:38,126-[TS] INFO main org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+   2018-11-05 12:10:38,127-[TS] INFO main org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+   2018-11-05 12:10:38,132-[TS] INFO main org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [org.apache.commons.dbcp2:name=dataSource,type=BasicDataSource]
+   2018-11-05 12:10:38,136-[TS] INFO main org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+   2018-11-05 12:10:38,182-[TS] INFO main org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+   2018-11-05 12:10:38,206-[TS] INFO main org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+   2018-11-05 12:10:38,208-[TS] INFO main edu.xd.ridelab.IotPlatformApplication - Started IotPlatformApplication in 5.435 seconds (JVM running for 6.086)
+   2018-11-05 12:10:42,060-[TS] INFO http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+   2018-11-05 12:10:42,078-[TS] INFO http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+   2018-11-05 12:10:42,510-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 12:10:42
+URL:http://localhost:8080/index
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.security.SecurityController.index
+ARGS:[org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@12dda0a4]
+	username:root
+	password:123456
+
+   2018-11-05 12:10:42,735-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果："firstPage"
+
+   2018-11-05 12:10:42,735-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：227ms
+
+   2018-11-05 12:10:46,446-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 12:10:46
+URL:http://localhost:8080/receiver/1/action/start
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.receiver.ReceiverController.start
+ARGS:[1]
+
+   2018-11-05 12:10:46,470-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{}
+
+   2018-11-05 12:10:46,470-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：24ms
+
+   2018-11-05 12:12:24,175-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求信息:
+TIME:2018-11-05 12:12:24
+URL:http://localhost:8080/receiver/1/action/stop
+HTTP_METHOD:POST
+IP:0:0:0:0:0:0:0:1
+CLASS_METHOD:edu.xd.ridelab.controller.receiver.ReceiverController.stop
+ARGS:[1]
+
+   2018-11-05 12:12:24,179-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{}
+
+   2018-11-05 12:12:24,180-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：5ms
+
+   
