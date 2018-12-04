@@ -54,6 +54,10 @@ public class SecurityController {
         return "login";
     }
 
+    @GetMapping("/")
+    @PreAuthorize("hasAnyRole('ADMIN','USER')")
+    public String index(){return "login";}
+
     @GetMapping("/logout")
     public String logout() {
         return "login";
