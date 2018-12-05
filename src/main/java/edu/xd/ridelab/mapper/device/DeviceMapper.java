@@ -23,5 +23,7 @@ public interface DeviceMapper {
 
     int deleteByPrimaryKey(@Param("deviceId") long primaryKey);
 
+    int deleteByProductId(@Param("productId") long productId);
+
     int updateByPrimaryKey(DeviceVO deviceVO);
 }

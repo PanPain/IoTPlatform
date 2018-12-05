@@ -39,6 +39,18 @@ public class DeviceServiceImpl implements DeviceService {
         return deviceMapper.deleteByPrimaryKey(deviceId);
     }
 
+    /**
+     * @description 根据产品id，删除该产品所有的设备
+     * @author PanTeng
+     * @date 19:15,2018/12/5
+     * @param null
+     * @return
+     */
+    @Override
+    public int deleteDeviceByProductId(Long productId) throws Exception {
+        return deviceMapper.deleteByProductId(productId);
+    }
+
     @Override
     public int addDevice(DeviceVO deviceVO) throws Exception {
 

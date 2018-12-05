@@ -101,4 +101,8 @@
         delete from DEVICE
           where DEVICE_ID = #{deviceId,jdbcType=BIGINT}
     </delete>
+    <delete id="deleteByProductId" parameterType="java.lang.Long">
+        delete from DEVICE
+        where FK_PRODUCT_ID = #{productId,jdbcType=BIGINT}
+    </delete>
 </mapper>

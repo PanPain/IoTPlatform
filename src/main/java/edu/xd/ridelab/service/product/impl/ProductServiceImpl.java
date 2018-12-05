@@ -1,6 +1,7 @@
 package edu.xd.ridelab.service.product.impl;
 
 import com.alibaba.fastjson.JSON;
+import edu.xd.ridelab.mapper.device.DeviceMapper;
 import edu.xd.ridelab.mapper.product.ProductMapper;
 import edu.xd.ridelab.model.AddedProductsModel;
 import edu.xd.ridelab.model.ProductBriefInfoModel;
@@ -26,6 +27,8 @@ public class ProductServiceImpl implements ProductService{
 
     @Autowired
     ProductMapper productMapper;
+    @Autowired
+    DeviceMapper deviceMapper;
 
     /**
      * @description 查询用户已添加的产品
@@ -67,7 +70,7 @@ public class ProductServiceImpl implements ProductService{
     }
 
     /**
-     * @description 删除产品
+     * @description 删除产品，同时删除该产品下的所有设备
      * @author PanTeng
      * @date 16:38,2018/8/13
      * @param productId 产品id
@@ -78,6 +81,7 @@ public class ProductServiceImpl implements ProductService{
     public void deleteProduct(long productId) {
         try {
             productMapper.deleteProductByProductId(productId);
+            deviceMapper.deleteByProductId(productId);
         }catch (Exception e){
             System.out.println(e.getStackTrace());
         }

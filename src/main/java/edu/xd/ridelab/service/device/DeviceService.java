@@ -18,6 +18,8 @@ public interface DeviceService {
 
     int deleteDevice(Long deviceId) throws Exception;
 
+    int deleteDeviceByProductId(Long productId) throws Exception;
+
     DeviceVO getDeviceById(Long deviceId) throws Exception;
 
     List<DeviceVO> getDeviceByProductId(Long productId) throws Exception;
