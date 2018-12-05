@@ -13,7 +13,8 @@ public enum DeviceMonitorCode {
     GET_DEVICE_LOCATION_SUCCESS("04003","设备位置信息查询成功"),
     NO_DEVICE_LOCATION("04004","无设备位置信息"),
     GET_DEVICE_STATUS("04005","设备状态信息查询成功"),
-    NO_DEVICE_STATUS("04006","无设备状态信息")
+    NO_DEVICE_STATUS("04006","无设备状态信息"),
+    GET_DEVICE_DATA_SUCCESS("04007","获取设备数据信息成功"),
     ;
 
     private String code;

@@ -1,6 +1,7 @@
 package edu.xd.ridelab.controller.devicemonitor;
 
 
+import edu.xd.ridelab.controller.product.ProductCode;
 import edu.xd.ridelab.controller.response.ResponseResult;
 import edu.xd.ridelab.model.DeviceModel;
 import edu.xd.ridelab.service.devicemonitor.DeviceMonitorService;
@@ -171,6 +172,26 @@ public class DeviceMonitorController {
             responseResult.setCode(DeviceMonitorCode.NO_DEVICE_STATUS.getCode());
             responseResult.setMessage(DeviceMonitorCode.NO_DEVICE_STATUS.getMessage());
         }
+        return responseResult;
+    }
+
+    /**
+     * @description 根据产品id 获取该类产品所有设备的数据信息
+     * @author PanTeng
+     * @date 9:07,2018/12/5
+     * @param productId 产品id
+     * @return
+     */
+    @RequestMapping(value = "/devicemonitor/getDeviceData", method = RequestMethod.POST)
+    public ResponseResult getDeviceData(@RequestParam("productId") long productId){
+        ResponseResult responseResult = new ResponseResult();
+        List deviceDataList = new ArrayList();      //存放该类产品所有设备的数据信息
+        deviceDataList = deviceMonitorService.getAllDeviceData(productId);
+
+        responseResult.setData(deviceDataList);
+        responseResult.setSuccess(true);
+        responseResult.setCode(DeviceMonitorCode.GET_DEVICE_DATA_SUCCESS.getCode());
+        responseResult.setMessage(DeviceMonitorCode.GET_DEVICE_DATA_SUCCESS.getMessage());
         return responseResult;
     }
 }

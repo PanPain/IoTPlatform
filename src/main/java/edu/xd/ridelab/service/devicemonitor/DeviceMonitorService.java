@@ -1,5 +1,6 @@
 package edu.xd.ridelab.service.devicemonitor;
 
+import edu.xd.ridelab.model.DeviceDataModel;
 import edu.xd.ridelab.vo.DeviceVO;
 import org.apache.ibatis.annotations.Param;
 
@@ -24,4 +25,13 @@ public interface DeviceMonitorService {
 
 
     List<DeviceVO> getAllDevice(@Param("offset") int offset, @Param("pageNum") int pageNum);
+
+    /**
+     * @description 根据产品id，获得该类产品所有设备的数据信息
+     * @author PanTeng
+     * @date 9:37,2018/12/5
+     * @param productId 产品id
+     * @return
+     */
+    List<DeviceDataModel> getAllDeviceData(@Param("productId")long productId);
 }
