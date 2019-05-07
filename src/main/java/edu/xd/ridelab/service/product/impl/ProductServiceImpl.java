@@ -65,6 +65,7 @@ public class ProductServiceImpl implements ProductService{
         productDetailInfoModel.setProductManufactuter(productVO.getProductManufacturer());
         productDetailInfoModel.setProductDesc(productVO.getProductDesc());
         productDetailInfoModel.setDeviceModel(productVO.getDeviceModel());
+        productDetailInfoModel.setProductSdk(productVO.getProductSdk());
 
         return productDetailInfoModel;
     }

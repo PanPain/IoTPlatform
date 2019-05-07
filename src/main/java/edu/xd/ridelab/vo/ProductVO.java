@@ -38,10 +38,15 @@ public class ProductVO {
      */
     private String deviceModel;
 
+    /**
+     * 产品SDK，实际为UUID
+     */
+    private String productSdk;
+
     public ProductVO() {
     }
 
-    public ProductVO(long productId, long fkUserId, String productName, String productManufacturer, String productCode, String productDesc, String deviceModel) {
+    public ProductVO(long productId, long fkUserId, String productName, String productManufacturer, String productCode, String productDesc, String deviceModel, String productSdk) {
         this.productId = productId;
         this.fkUserId = fkUserId;
         this.productName = productName;
@@ -49,6 +54,7 @@ public class ProductVO {
         this.productCode = productCode;
         this.productDesc = productDesc;
         this.deviceModel = deviceModel;
+        this.productSdk = productSdk;
     }
 
     public long getProductId() {
@@ -91,6 +97,14 @@ public class ProductVO {
         this.productCode = productCode;
     }
 
+    public String getProductDesc() {
+        return productDesc;
+    }
+
+    public void setProductDesc(String productDesc) {
+        this.productDesc = productDesc;
+    }
+
     public String getDeviceModel() {
         return deviceModel;
     }
@@ -99,11 +113,11 @@ public class ProductVO {
         this.deviceModel = deviceModel;
     }
 
-    public String getProductDesc() {
-        return productDesc;
+    public String getProductSdk() {
+        return productSdk;
     }
 
-    public void setProductDesc(String productDesc) {
-        this.productDesc = productDesc;
+    public void setProductSdk(String productSdk) {
+        this.productSdk = productSdk;
     }
 }

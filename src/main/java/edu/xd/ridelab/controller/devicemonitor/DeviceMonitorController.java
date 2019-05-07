@@ -1,7 +1,6 @@
 package edu.xd.ridelab.controller.devicemonitor;
 
 
-import edu.xd.ridelab.controller.product.ProductCode;
 import edu.xd.ridelab.controller.response.ResponseResult;
 import edu.xd.ridelab.model.DeviceModel;
 import edu.xd.ridelab.service.devicemonitor.DeviceMonitorService;
@@ -47,10 +46,10 @@ public class DeviceMonitorController {
         deviceVOLists = deviceMonitorService.getAllDevice(offset,tagNum);
         DeviceModel deviceModel = null;
         for(int i = 0; i < deviceVOLists.size(); i++){
-            if(deviceVOLists.get(i).getTimeStamp() != null){
+            if(deviceVOLists.get(i).getLastConnectTime() != null){
                 deviceModel = new DeviceModel();
                 Timestamp d = new Timestamp(System.currentTimeMillis());
-                double time = (d.getTime() - deviceVOLists.get(i).getTimeStamp().getTime())/(1000*60);
+                double time = (d.getTime() - deviceVOLists.get(i).getLastConnectTime().getTime())/(1000*60);
                 if(time <= 5){
                     deviceModel.setDevice(deviceVOLists.get(i));
                     deviceModel.setStatus(true);
@@ -93,10 +92,10 @@ public class DeviceMonitorController {
         deviceVOLists = deviceMonitorService.getAllDevice(offset,tagNum);
         DeviceModel deviceModel = null;
         for(int i = 0; i < deviceVOLists.size(); i++){
-            if(deviceVOLists.get(i).getTimeStamp() != null){
+            if(deviceVOLists.get(i).getLastConnectTime() != null){
                 deviceModel = new DeviceModel();
                 Timestamp d = new Timestamp(System.currentTimeMillis());
-                double time = (d.getTime() - deviceVOLists.get(i).getTimeStamp().getTime())/(1000*60);
+                double time = (d.getTime() - deviceVOLists.get(i).getLastConnectTime().getTime())/(1000*60);
                 if(time <= 5){
                     deviceModel.setDevice(deviceVOLists.get(i));
                     deviceModel.setStatus(true);
@@ -141,10 +140,10 @@ public class DeviceMonitorController {
         deviceVOLists = deviceMonitorService.getAllDevice(offset,tagNum);
         DeviceModel deviceModel = null;
         for(int i = 0; i < deviceVOLists.size(); i++){
-            if(deviceVOLists.get(i).getTimeStamp() != null){
+            if(deviceVOLists.get(i).getLastConnectTime() != null){
                 deviceModel = new DeviceModel();
                 Timestamp d = new Timestamp(System.currentTimeMillis());
-                double time = (d.getTime() - deviceVOLists.get(i).getTimeStamp().getTime())/(1000*60);
+                double time = (d.getTime() - deviceVOLists.get(i).getLastConnectTime().getTime())/(1000*60);
                 if(time <= 5){
                     deviceModel.setDevice(deviceVOLists.get(i));
                     deviceModel.setStatus(true);

@@ -7,7 +7,7 @@
     <select id="getProductsByUserId" parameterType="java.lang.Long" resultType="edu.xd.ridelab.model.ProductBriefInfoModel">
         SELECT PRODUCT_ID AS productId,PRODUCT_NAME AS productName,
                 PRODUCT_MANUFACTURER AS productManufacturer,PRODUCT_CODE AS productCode,
-                PRODUCT_DESC AS productDesc
+                PRODUCT_DESC AS productDesc,PRODUCT_SDK AS productSdk
         FROM PRODUCT
         WHERE  FK_USER_ID = #{userId}
     </select>
@@ -15,7 +15,7 @@
     <select id="getProductInfoByProductId" parameterType="java.lang.Long" resultType="edu.xd.ridelab.vo.ProductVO">
         SELECT  PRODUCT_ID AS productId,FK_USER_ID AS fkUserId, PRODUCT_NAME AS productName,
                 PRODUCT_MANUFACTURER AS productManufacturer,PRODUCT_CODE AS productCode,
-                PRODUCT_DESC AS productDesc, DEVICE_MODEL AS deviceModel
+                PRODUCT_DESC AS productDesc, DEVICE_MODEL AS deviceModel, PRODUCT_SDK AS productSdk
         FROM PRODUCT
         WHERE PRODUCT_ID = #{productId}
     </select>

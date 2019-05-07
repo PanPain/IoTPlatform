@@ -160,7 +160,7 @@ The date format, combination of p, P, h, hh, i, ii, s, ss, d, dd, m, mm, M, MM, 
  * MM : full textual representation of a month, such as January or March
  * yy : two digit representation of a year
  * yyyy : full numeric representation of a year, 4 digits
- * t : unix epoch timestamp
+ * t : unix epoch lastConnectTime
  * Z : abbreviated timezone name
 
 ### weekStart

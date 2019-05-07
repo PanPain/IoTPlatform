@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 /**
@@ -56,6 +57,7 @@ public class DeviceController {
 
         ResponseResult responseResult = new ResponseResult();
         try{
+            deviceVO.setLastConnectTime(new Timestamp(System.currentTimeMillis()));
             int result = deviceService.addDevice(deviceVO);
             if(result == 0){
                 responseResult.setSuccess(false);
@@ -202,10 +204,10 @@ public class DeviceController {
 //        deviceVOLists = deviceService.getAllDevice(offset,tagNum);
 //        DeviceModel deviceModel = null;
 //        for(int i = 0; i < deviceVOLists.size(); i++){
-//            if(deviceVOLists.get(i).getTimeStamp() != null){
+//            if(deviceVOLists.get(i).getLastConnectTime() != null){
 //                deviceModel = new DeviceModel();
 //                Timestamp d = new Timestamp(System.currentTimeMillis());
-//                double time = (d.getTime() - deviceVOLists.get(i).getTimeStamp().getTime())/(1000*60);
+//                double time = (d.getTime() - deviceVOLists.get(i).getLastConnectTime().getTime())/(1000*60);
 //                if(time <= 5){
 //                    deviceModel.setDevice(deviceVOLists.get(i));
 //                    deviceModel.setStatus(true);

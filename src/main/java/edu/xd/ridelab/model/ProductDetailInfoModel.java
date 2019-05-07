@@ -39,6 +39,8 @@ public class ProductDetailInfoModel {
      */
     private String deviceModel;
 
+    private String productSdk;
+
     public ProductDetailInfoModel() {
     }
 
@@ -106,5 +108,13 @@ public class ProductDetailInfoModel {
 
     public void setDeviceModel(String deviceModel) {
         this.deviceModel = deviceModel;
+    }
+
+    public String getProductSdk() {
+        return productSdk;
+    }
+
+    public void setProductSdk(String productSdk) {
+        this.productSdk = productSdk;
     }
 }

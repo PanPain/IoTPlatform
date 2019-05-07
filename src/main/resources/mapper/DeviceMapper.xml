@@ -17,7 +17,7 @@
           DEVICE_LATITUDE as deviceLatitude,
           FK_PRODUCT_ID as productId,
           DEVICE_DATA as deviceData,
-          TIME_STAMP as timeStamp
+          TIME_STAMP as lastConnectTime
         FROM
           DEVICE
     </select>
@@ -30,7 +30,7 @@
           DEVICE_LATITUDE as deviceLatitude,
           FK_PRODUCT_ID as productId,
           DEVICE_DATA as deviceData,
-          TIME_STAMP as timeStamp
+          TIME_STAMP as lastConnectTime
         FROM
           DEVICE
         WHERE FK_PRODUCT_ID = #{productId}
@@ -44,7 +44,7 @@
           DEVICE_LATITUDE as deviceLatitude,
           FK_PRODUCT_ID as productId,
           DEVICE_DATA as deviceData,
-          TIME_STAMP as timeStamp
+          TIME_STAMP as lastConnectTime
         FROM
           DEVICE
         WHERE DEVICE_ID = #{deviceId}
@@ -58,7 +58,7 @@
           DEVICE_LATITUDE as deviceLatitude,
           FK_PRODUCT_ID as productId,
           DEVICE_DATA as deviceData,
-          TIME_STAMP as timeStamp
+          TIME_STAMP as lastConnectTime
         FROM
           DEVICE
         WHERE DEVICE_IDENTIFIER = #{deviceIdentifier} AND FK_PRODUCT_ID = #{productId}
@@ -67,7 +67,7 @@
     <insert id="insert" parameterType="edu.xd.ridelab.vo.DeviceVO">
         insert into DEVICE (DEVICE_ID,DEVICE_IDENTIFIER,DEVICE_LONGITUDE,DEVICE_LATITUDE,FK_PRODUCT_ID,DEVICE_DATA,TIME_STAMP)
           values (#{deviceId,jdbcType=BIGINT}, #{deviceIdentifier,jdbcType=VARCHAR}, #{deviceLongitude,jdbcType=VARCHAR},
-                  #{deviceLatitude,jdbcType=VARCHAR}, #{productId,jdbcType=BIGINT}, #{deviceData,jdbcType=VARCHAR}, #{timeStamp,jdbcType=TIMESTAMP}
+                  #{deviceLatitude,jdbcType=VARCHAR}, #{productId,jdbcType=BIGINT}, #{deviceData,jdbcType=VARCHAR}, #{lastConnectTime,jdbcType=TIMESTAMP}
           )
     </insert>
 
@@ -89,8 +89,8 @@
             <if test="deviceData != null">
                 DEVICE_DATA = #{deviceData,jdbcType=VARCHAR},
             </if>
-            <if test="timeStamp != null">
-                TIME_STAMP = #{timeStamp,jdbcType=TIMESTAMP},
+            <if test="lastConnectTime != null">
+                TIME_STAMP = #{lastConnectTime,jdbcType=TIMESTAMP},
             </if>
         </set>
         where DEVICE_ID = #{deviceId,jdbcType=BIGINT}

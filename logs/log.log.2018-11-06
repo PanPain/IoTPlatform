@@ -172,7 +172,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 10:37:32,239-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 10:37:32,239-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 10:37:32,240-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：29ms
 
@@ -234,7 +234,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 10:38:00,413-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000},{"deviceData":"{\"null\":\"\"}","deviceId":3,"deviceIdentifier":"air-001","deviceLatitude":"","deviceLongitude":"","productId":4,"timeStamp":9479000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 10:38:00,413-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000},{"deviceData":"{\"null\":\"\"}","deviceId":3,"deviceIdentifier":"air-001","deviceLatitude":"","deviceLongitude":"","productId":4,"lastConnectTime":9479000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 10:38:00,413-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：3ms
 
@@ -283,7 +283,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 10:45:21,031-[TS] INFO http-nio-8080-exec-9 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000},{"deviceData":"{\"null\":\"\"}","deviceId":3,"deviceIdentifier":"air-001","deviceLatitude":"","deviceLongitude":"","productId":4,"timeStamp":9479000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 10:45:21,031-[TS] INFO http-nio-8080-exec-9 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000},{"deviceData":"{\"null\":\"\"}","deviceId":3,"deviceIdentifier":"air-001","deviceLatitude":"","deviceLongitude":"","productId":4,"lastConnectTime":9479000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 10:45:21,031-[TS] INFO http-nio-8080-exec-9 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：3ms
 
@@ -320,7 +320,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 10:45:27,330-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 10:45:27,330-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 10:45:27,331-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：3ms
 
@@ -384,7 +384,7 @@ CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.getDevByProduct
 ARGS:[1]
 	productId:1
 
-   2018-11-06 10:45:36,615-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 10:45:36,615-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 10:45:36,616-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：6ms
 
@@ -396,7 +396,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 10:45:40,111-[TS] INFO http-nio-8080-exec-7 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 10:45:40,111-[TS] INFO http-nio-8080-exec-7 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 10:45:40,111-[TS] INFO http-nio-8080-exec-7 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：3ms
 
@@ -432,7 +432,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 10:46:14,671-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 10:46:14,671-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 10:46:14,672-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：5ms
 
@@ -494,7 +494,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 10:46:35,956-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"timeStamp":9994000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 10:46:35,956-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"lastConnectTime":9994000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 10:46:35,956-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：4ms
 
@@ -583,7 +583,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 10:50:01,193-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"timeStamp":9994000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 10:50:01,193-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"lastConnectTime":9994000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 10:50:01,193-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：89ms
 
@@ -621,7 +621,7 @@ CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.getDevByProduct
 ARGS:[4]
 	productId:4
 
-   2018-11-06 10:50:06,781-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"timeStamp":9994000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 10:50:06,781-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"lastConnectTime":9994000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 10:50:06,781-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：5ms
 
@@ -748,7 +748,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 10:53:54,896-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"timeStamp":9994000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":5,"deviceIdentifier":"air-002","deviceLatitude":"133","deviceLongitude":"122","productId":4,"timeStamp":10219000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 10:53:54,896-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"lastConnectTime":9994000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":5,"deviceIdentifier":"air-002","deviceLatitude":"133","deviceLongitude":"122","productId":4,"lastConnectTime":10219000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 10:53:54,896-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：13ms
 
@@ -850,7 +850,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 10:55:33,430-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"timeStamp":9994000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 10:55:33,430-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"lastConnectTime":9994000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 10:55:33,430-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：16ms
 
@@ -886,7 +886,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 10:56:22,186-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"timeStamp":9994000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 10:56:22,186-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"lastConnectTime":9994000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 10:56:22,187-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：5ms
 
@@ -924,7 +924,7 @@ CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.getDevByProduct
 ARGS:[4]
 	productId:4
 
-   2018-11-06 10:56:25,098-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"timeStamp":9994000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 10:56:25,098-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"lastConnectTime":9994000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 10:56:25,099-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：7ms
 
@@ -974,7 +974,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 11:01:18,472-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"timeStamp":9994000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":6,"deviceIdentifier":"air-002","deviceLatitude":"2","deviceLongitude":"1","productId":4,"timeStamp":10592000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 11:01:18,472-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"lastConnectTime":9994000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":6,"deviceIdentifier":"air-002","deviceLatitude":"2","deviceLongitude":"1","productId":4,"lastConnectTime":10592000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 11:01:18,472-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：3ms
 
@@ -1012,7 +1012,7 @@ CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.getDevByProduct
 ARGS:[4]
 	productId:4
 
-   2018-11-06 11:01:20,364-[TS] INFO http-nio-8080-exec-7 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"timeStamp":9994000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":6,"deviceIdentifier":"air-002","deviceLatitude":"2","deviceLongitude":"1","productId":4,"timeStamp":10592000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 11:01:20,364-[TS] INFO http-nio-8080-exec-7 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"lastConnectTime":9994000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":6,"deviceIdentifier":"air-002","deviceLatitude":"2","deviceLongitude":"1","productId":4,"lastConnectTime":10592000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 11:01:20,364-[TS] INFO http-nio-8080-exec-7 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：4ms
 
@@ -1127,7 +1127,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 11:04:10,780-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"timeStamp":9994000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":6,"deviceIdentifier":"air-002","deviceLatitude":"2","deviceLongitude":"1","productId":4,"timeStamp":10592000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":7,"deviceIdentifier":"air-3","deviceLatitude":"2","deviceLongitude":"1","productId":4,"timeStamp":10890000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 11:04:10,780-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":4,"deviceIdentifier":"air-001","deviceLatitude":"134.54","deviceLongitude":"122.33","productId":4,"lastConnectTime":9994000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":6,"deviceIdentifier":"air-002","deviceLatitude":"2","deviceLongitude":"1","productId":4,"lastConnectTime":10592000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":7,"deviceIdentifier":"air-3","deviceLatitude":"2","deviceLongitude":"1","productId":4,"lastConnectTime":10890000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 11:04:10,780-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：35ms
 
@@ -1164,7 +1164,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 11:04:21,301-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":6,"deviceIdentifier":"air-002","deviceLatitude":"2","deviceLongitude":"1","productId":4,"timeStamp":10592000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":7,"deviceIdentifier":"air-3","deviceLatitude":"2","deviceLongitude":"1","productId":4,"timeStamp":10890000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 11:04:21,301-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":6,"deviceIdentifier":"air-002","deviceLatitude":"2","deviceLongitude":"1","productId":4,"lastConnectTime":10592000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":7,"deviceIdentifier":"air-3","deviceLatitude":"2","deviceLongitude":"1","productId":4,"lastConnectTime":10890000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 11:04:21,301-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：3ms
 
@@ -1201,7 +1201,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 11:04:27,008-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":6,"deviceIdentifier":"air-002","deviceLatitude":"2","deviceLongitude":"1","productId":4,"timeStamp":10592000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 11:04:27,008-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000},{"deviceData":"{\"null\":\"\",\"null\":\"\",\"null\":\"\",\"null\":\"\"}","deviceId":6,"deviceIdentifier":"air-002","deviceLatitude":"2","deviceLongitude":"1","productId":4,"lastConnectTime":10592000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 11:04:27,008-[TS] INFO http-nio-8080-exec-1 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：3ms
 
@@ -1238,7 +1238,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 11:04:30,891-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 11:04:30,891-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 11:04:30,892-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：7ms
 
@@ -1301,7 +1301,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 11:05:08,443-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 11:05:08,443-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 11:05:08,443-[TS] INFO http-nio-8080-exec-3 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：5ms
 
@@ -1363,7 +1363,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 11:07:43,287-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 11:07:43,287-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 11:07:43,287-[TS] INFO http-nio-8080-exec-10 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：3ms
 
@@ -1425,7 +1425,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-11-06 11:09:13,314-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"timeStamp":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"timeStamp":42636000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-11-06 11:09:13,314-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{\"null\":\"\"}","deviceId":1,"deviceIdentifier":"Dev1","deviceLatitude":"133","deviceLongitude":"122","productId":1,"lastConnectTime":35406000},{"deviceData":"{\"null\":\"\"}","deviceId":2,"deviceIdentifier":"2","deviceLatitude":"421","deviceLongitude":"123","productId":2,"lastConnectTime":42636000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-11-06 11:09:13,314-[TS] INFO http-nio-8080-exec-6 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：3ms
 

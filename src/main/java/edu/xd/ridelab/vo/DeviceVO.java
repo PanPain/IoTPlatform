@@ -13,7 +13,7 @@ public class DeviceVO {
     private String deviceLatitude;
     private long productId;
     private String deviceData;
-    private Timestamp timeStamp;
+    private Timestamp lastConnectTime;
 
     public String getDeviceLongitude() {
         return deviceLongitude;
@@ -63,11 +63,11 @@ public class DeviceVO {
         this.deviceData = deviceData;
     }
 
-    public Timestamp getTimeStamp() {
-        return timeStamp;
+    public Timestamp getLastConnectTime() {
+        return lastConnectTime;
     }
 
-    public void setTimeStamp(Timestamp timeStamp) {
-        this.timeStamp = timeStamp;
+    public void setLastConnectTime(Timestamp lastConnectTime) {
+        this.lastConnectTime = lastConnectTime;
     }
 }

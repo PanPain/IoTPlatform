@@ -5,7 +5,7 @@
 <mapper namespace="edu.xd.ridelab.mapper.devicemonitor.DeviceMonitorMapper">
     <select id="getAllDevice" resultType="edu.xd.ridelab.vo.DeviceVO">
         SELECT DEVICE_ID AS deviceId,DEVICE_IDENTIFIER AS deviceIdentifier,DEVICE_LONGITUDE AS deviceLongitude,
-        DEVICE_LATITUDE AS deviceLatitude,FK_PRODUCT_ID AS productId,DEVICE_DATA AS deviceData,TIME_STAMP AS timeStamp
+        DEVICE_LATITUDE AS deviceLatitude,FK_PRODUCT_ID AS productId,DEVICE_DATA AS deviceData,TIME_STAMP AS lastConnectTime
         FROM DEVICE
         limit #{offset},#{pageNum}
     </select>

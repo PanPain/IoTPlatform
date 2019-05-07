@@ -4374,7 +4374,7 @@ jQuery.event = {
 	},
 
 	// Includes some event props shared by KeyEvent and MouseEvent
-	props: "altKey bubbles cancelable ctrlKey currentTarget eventPhase metaKey relatedTarget shiftKey target timeStamp view which".split(" "),
+	props: "altKey bubbles cancelable ctrlKey currentTarget eventPhase metaKey relatedTarget shiftKey target lastConnectTime view which".split(" "),
 
 	fixHooks: {},
 
@@ -4544,8 +4544,8 @@ jQuery.Event = function( src, props ) {
 		jQuery.extend( this, props );
 	}
 
-	// Create a timestamp if incoming event doesn't have one
-	this.timeStamp = src && src.timeStamp || jQuery.now();
+	// Create a lastConnectTime if incoming event doesn't have one
+	this.lastConnectTime = src && src.lastConnectTime || jQuery.now();
 
 	// Mark it as fixed
 	this[ jQuery.expando ] = true;
@@ -15037,7 +15037,7 @@ $.extend(Datepicker.prototype, {
 	 * MM - month name long
 	 * y  - year (two digit)
 	 * yy - year (four digit)
-	 * @ - Unix timestamp (ms since 01/01/1970)
+	 * @ - Unix lastConnectTime (ms since 01/01/1970)
 	 * ! - Windows ticks (100ns since 01/01/0001)
 	 * "..." - literal text
 	 * '' - single quote

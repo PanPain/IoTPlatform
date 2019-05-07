@@ -109,7 +109,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-12-02 15:29:01,920-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{temperature:28, on_off:true, speed:2, mode:true}","deviceId":9,"deviceIdentifier":"air-001","deviceLatitude":"33","deviceLongitude":"22","productId":17,"timeStamp":15905000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-12-02 15:29:01,920-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{temperature:28, on_off:true, speed:2, mode:true}","deviceId":9,"deviceIdentifier":"air-001","deviceLatitude":"33","deviceLongitude":"22","productId":17,"lastConnectTime":15905000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-12-02 15:29:01,920-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：67ms
 
@@ -145,7 +145,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-12-02 15:29:14,737-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{temperature:28, on_off:true, speed:2, mode:true}","deviceId":9,"deviceIdentifier":"air-001","deviceLatitude":"33","deviceLongitude":"22","productId":17,"timeStamp":15905000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-12-02 15:29:14,737-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{temperature:28, on_off:true, speed:2, mode:true}","deviceId":9,"deviceIdentifier":"air-001","deviceLatitude":"33","deviceLongitude":"22","productId":17,"lastConnectTime":15905000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-12-02 15:29:14,737-[TS] INFO http-nio-8080-exec-2 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：6ms
 
@@ -181,7 +181,7 @@ IP:0:0:0:0:0:0:0:1
 CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.searchDevices
 ARGS:[1, 10]
 
-   2018-12-02 15:29:28,545-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{temperature:28, on_off:true, speed:2, mode:true}","deviceId":9,"deviceIdentifier":"air-001","deviceLatitude":"33","deviceLongitude":"22","productId":17,"timeStamp":15905000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
+   2018-12-02 15:29:28,545-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":[{"deviceData":"{temperature:28, on_off:true, speed:2, mode:true}","deviceId":9,"deviceIdentifier":"air-001","deviceLatitude":"33","deviceLongitude":"22","productId":17,"lastConnectTime":15905000}],"meta":{"code":"03001","message":"查看设备成功","success":true}}
 
    2018-12-02 15:29:28,545-[TS] INFO http-nio-8080-exec-4 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：6ms
 
@@ -206,7 +206,7 @@ CLASS_METHOD:edu.xd.ridelab.controller.device.DeviceController.getDeviceDetail
 ARGS:[9]
 	deviceId:9
 
-   2018-12-02 15:29:33,841-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":{"deviceData":"{temperature:28, on_off:true, speed:2, mode:true}","deviceId":9,"deviceIdentifier":"air-001","deviceLatitude":"33","deviceLongitude":"22","productId":17,"timeStamp":15905000},"meta":{"code":"03009","message":"查看设备详情成功","success":true}}
+   2018-12-02 15:29:33,841-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求结果：{"data":{"deviceData":"{temperature:28, on_off:true, speed:2, mode:true}","deviceId":9,"deviceIdentifier":"air-001","deviceLatitude":"33","deviceLongitude":"22","productId":17,"lastConnectTime":15905000},"meta":{"code":"03009","message":"查看设备详情成功","success":true}}
 
    2018-12-02 15:29:33,842-[TS] INFO http-nio-8080-exec-5 edu.xd.ridelab.common.aoplog.WebLogAspect - 请求耗时：4ms
 
