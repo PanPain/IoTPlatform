@@ -8,6 +8,7 @@ import edu.xd.ridelab.model.ProductBriefInfoModel;
 import edu.xd.ridelab.model.ProductDetailInfoModel;
 import edu.xd.ridelab.model.ProductModel;
 import edu.xd.ridelab.service.product.ProductService;
+import edu.xd.ridelab.util.SdkUtil;
 import edu.xd.ridelab.vo.ProductVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -99,7 +100,7 @@ public class ProductServiceImpl implements ProductService{
      */
     @Override
     @Transactional
-    public void addProduct(ProductModel productModel, long userId) {
+    public String addProduct(ProductModel productModel, long userId) {
         ProductVO productVO = new ProductVO();
 
         productVO.setFkUserId(userId);
@@ -110,6 +111,13 @@ public class ProductServiceImpl implements ProductService{
         productVO.setDeviceModel(JSON.toJSONString(productModel.getDeviceModel()));
 
         productMapper.addProductWithUserId(productVO);
+
+        Long productId = productVO.getProductId();
+        String sdk = SdkUtil.getSDK(productId);
+        productVO.setProductSdk(sdk);
+        productMapper.updateProduct(productVO);
+
+        return sdk;
 /*        productMapper.addDeviceModels(productModel.getDeviceModel());*/
     }
 }

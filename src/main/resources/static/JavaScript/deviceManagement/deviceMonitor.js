@@ -8,7 +8,7 @@ function addDevice(arr){
         var status1="在线"
     }
     var str='<tr><td>'+index+'</td>';
-    str+='<td >'+arr.device.deviceIdentifier+'</td>'+'<td >'+arr.device.fkProductId+'</td>'+'<td >'+status1+'</td></tr>';
+    str+='<td >'+arr.device.deviceIdentifier+'</td>'+'<td >'+arr.product.productName+'<td >'+arr.product.productManufactuter+'</td>'+'<td >'+status1+'</td></tr>';
     return str;
 }
 $(function(){
@@ -25,6 +25,7 @@ $(function(){
                 var len=mfData.length;
                 var strr='';
                 for(var i=0;i<len;i++){
+                    console.log(mfData[i])
                     strr+=addDevice(mfData[i]);
                 }
                 tby.empty();

@@ -61,4 +61,9 @@ public interface ProductMapper {
      */
     @Deprecated
     int addDeviceModels(@Param("deviceModelList")List<DeviceModelVO> deviceModelVOList);
+
+    /**
+     * 修改产品
+     */
+    int updateProduct(ProductVO product);
 }

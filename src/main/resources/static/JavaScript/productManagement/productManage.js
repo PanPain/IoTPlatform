@@ -126,9 +126,21 @@ function addProduct(arr, index) {
     var str = '<tr id="myTr" ><td class="center checkboxTbl"><label class="pos-rel" style="display:block;">' +
         '<input type="checkbox" class="ace chk" name="chk" data-id="' + arr.productId + '" data-index="' + index + '" data-name="' + arr.productName + '" data-manufac="' + arr.productManufacturer + '" data-desc="' + arr.productDesc + '" data-code="' + arr.productCode + '"/>' + '<span class="lbl"></span></label></td><td>' + index + '</td>';
 
+    var storage=window.localStorage;
+    var btnsts=storage.getItem(arr.productId);
+    if(btnsts == "open" || btnsts == undefined){
+        btnclass = 'btn-success'
+        btnhtml = '开启'
+        btnval = '开启'
+    }
+    else{
+        btnclass = 'btn-info'
+        btnhtml = '关闭'
+        btnval = '关闭'
+    }
     var str1 = str + '<td class="proname11 ">' + arr.productName + '</td>' + '<td class="promanu11 ">' + arr.productManufacturer + '</td>' + '<td class="procode11 ">' + arr.productCode + '</td>' + '<td class="prodesc11">' + arr.productDesc + '</td>';
     // var a=$("#myTr").data("id");
-    str1 += '<td class="editTbl"><div class="hidden-sm hidden-xs action-buttons"><a id="proView" class="blue proView"  data-toggle="modal" onclick="view(this)" data-id="' + arr.productId + '"><i id="proView" class="ace-icon fa fa-search-plus bigger-130" ></i> </a><a id="proEdit" class="green proEdit" href="#modal-table" data-toggle="modal"><i class="ace-icon fa fa-pencil bigger-130"></i></a><a id="proDelRow" class="red proDelRow"  data-toggle="modal" data-id="'+ arr.productId +'" onclick="del(this)"><i class=" ace-icon fa fa-trash-o bigger-130"></i></a>&nbsp&nbsp<button id="op" class="btn btn-xs btn-success" style="block-inline"  value="开启" data-id="'+ arr.productId +'" onclick="op(this)">开启</button></div>';
+    str1 += '<td class="editTbl"><div class="hidden-sm hidden-xs action-buttons"><a id="proView" class="blue proView"  data-toggle="modal" onclick="view(this)" data-id="' + arr.productId + '"><i id="proView" class="ace-icon fa fa-search-plus bigger-130" ></i> </a><a id="proEdit" class="green proEdit" href="#modal-table" data-toggle="modal"><i class="ace-icon fa fa-pencil bigger-130"></i></a><a id="proDelRow" class="red proDelRow"  data-toggle="modal" data-id="'+ arr.productId +'" onclick="del(this)"><i class=" ace-icon fa fa-trash-o bigger-130"></i></a>&nbsp&nbsp<button id="op" class="btn btn-xs '+btnclass+' " style="block-inline"  value="'+ btnval +'" data-id="'+ arr.productId +'" onclick="op(this)">'+ btnhtml +'</button></div>';
     str1 += '<div class="hidden-md hidden-lg"><div class="inline pos-rel"> <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto"><i class="ace-icon fa fa-caret-down icon-only bigger-120"></i></button><ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close"><li><a href="#modal-table" class="tooltip-info" data-rel="tooltip" title="View" data-toggle="modal"> <span class="blue"><i class="ace-icon fa fa-search-plus bigger-120"></i></span></a></li><li><a href="#modal-table" class="tooltip-success" data-rel="tooltip" title="Edit" data-toggle="modal"><span class="green"><i class="ace-icon fa fa-pencil-square-o bigger-120"></i></span></a></li><li><a href="#modal-table" class="tooltip-error" data-rel="tooltip" title="Delete" data-toggle="modal"><span class="red"><i class="ace-icon fa fa-trash-o bigger-120"></i></span></a></li></ul></div> </div></td></tr>';
 
 
@@ -140,7 +152,7 @@ function addAllProduct(arr) {
     var str = '';
     var dataArray = arr['data'];
     var meta = arr['meta'];
-    var a = meta['success'];
+    //var a = meta['success'];
     var dataArr = dataArray['list'];
 
     if (!meta['success']) {
@@ -186,6 +198,8 @@ if(val =="开启"){
             obj.innerHTML = "关闭";
             obj.classList.remove("btn-success");
             obj.classList.add("btn-info");
+            var storage=window.localStorage;
+            storage.setItem(id,"close");
         },
         error: function (errorThrown) {
             alert("开启失败");
@@ -204,6 +218,8 @@ if(val =="开启"){
             obj.innerHTML = "开启";
             obj.classList.remove("btn-info");
             obj.classList.add("btn-success");
+            var storage=window.localStorage;
+            storage.setItem(id,"open");
         },
         error: function (errorThrown) {
             alert("关闭失败");
@@ -323,7 +339,9 @@ $('.page-content').on('click', '#addProduct', function (e) {
         success: function (response) {
 
             if (response.meta.success) {
-                alert(response.meta.message);
+               
+                console.log("新增返回信息:"+response)
+                alert(response.meta.message+","+"\n"+"SDK为: "+response.data);// 显示sdk信息
                 location.reload();
             } else {}
         },
@@ -400,6 +418,7 @@ function viewProduct(response) {
         $("#proNameV").val(data['productName']);
         $("#proManuV").val(data['productManufactuter']);
         $("#proTypeV").val(data['productCode']);
+        $("#proSDKV").val(data['productSdk']);//sdk信息
         document.getElementById("proDescV").innerHTML = data['productDesc'];
         var model = data['deviceModel'];
 
@@ -582,6 +601,7 @@ function del(obj) {
                 data: "productId=" + delId,
                 success: function (response) {
                     if (response.meta.success) {
+                        console.log(response)
                         alert('删除成功');
                         //alert(this);
                         $($("td :checked").parent().parent().parent()).remove();

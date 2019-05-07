@@ -3,8 +3,11 @@ package edu.xd.ridelab.controller.devicemonitor;
 
 import edu.xd.ridelab.controller.response.ResponseResult;
 import edu.xd.ridelab.model.DeviceModel;
+import edu.xd.ridelab.model.ProductDetailInfoModel;
 import edu.xd.ridelab.service.devicemonitor.DeviceMonitorService;
+import edu.xd.ridelab.service.product.ProductService;
 import edu.xd.ridelab.vo.DeviceVO;
+import edu.xd.ridelab.vo.ProductVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -30,6 +33,9 @@ public class DeviceMonitorController {
     @Autowired
     DeviceMonitorService deviceMonitorService;
 
+    @Autowired
+    ProductService productService;
+
     /**
      * @Author FBY
      * @Description
@@ -51,16 +57,17 @@ public class DeviceMonitorController {
                 Timestamp d = new Timestamp(System.currentTimeMillis());
                 double time = (d.getTime() - deviceVOLists.get(i).getLastConnectTime().getTime())/(1000*60);
                 if(time <= 5){
-                    deviceModel.setDevice(deviceVOLists.get(i));
                     deviceModel.setStatus(true);
-                    deviceModelLists.add(deviceModel);
                 }
                 else{
-                    deviceModel.setDevice(deviceVOLists.get(i));
                     deviceModel.setStatus(false);
-                    deviceModelLists.add(deviceModel);
                 }
-            }
+                deviceModel.setDevice(deviceVOLists.get(i));
+                ProductDetailInfoModel product = productService.getProductInfo(deviceVOLists.get(i).getProductId());
+                deviceModel.setProduct(product);
+
+                deviceModelLists.add(deviceModel);
+                }
         }
         if(deviceModelLists.size() != 0){
         responseResult.setData(deviceModelLists);

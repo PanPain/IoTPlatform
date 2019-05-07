@@ -49,5 +49,5 @@ public interface ProductService {
      * @param productModel 产品模型
      * @return
      */
-    void addProduct(ProductModel productModel, long userId);
+    String addProduct(ProductModel productModel, long userId);
 }

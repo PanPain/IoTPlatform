@@ -1,6 +1,7 @@
 package edu.xd.ridelab.model;
 
 import edu.xd.ridelab.vo.DeviceVO;
+import edu.xd.ridelab.vo.ProductVO;
 
 /**
  * @Author FBY
@@ -12,6 +13,16 @@ import edu.xd.ridelab.vo.DeviceVO;
 public class DeviceModel {
     private DeviceVO device ;
     private boolean status;
+
+    private ProductDetailInfoModel product;
+
+    public ProductDetailInfoModel getProduct() {
+        return product;
+    }
+
+    public void setProduct(ProductDetailInfoModel product) {
+        this.product = product;
+    }
 
     public DeviceVO getDevice() {
         return device;

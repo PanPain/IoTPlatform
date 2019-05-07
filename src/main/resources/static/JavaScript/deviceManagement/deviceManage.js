@@ -100,6 +100,8 @@ function updateTable(data) {
             success: function (response) {
                 var select = $("#select")
                 select.empty();
+				var select1 = $("#select1")
+                select1.empty();
                 var result = JSON.stringify(response);
                 allProduct = JSON.parse(result);
                 var arr = allProduct['data'];
@@ -116,7 +118,8 @@ function updateTable(data) {
                 }
                 $("#select").html(strr);
                 document.getElementById("select").selectedIndex = -1;
-
+                $("#select1").html(strr);
+                document.getElementById("select1").selectedIndex = -1;
                 str = null;
 
             },
@@ -194,71 +197,22 @@ function devDelRow(){
         }
     }
 };
-////查看产品列表
-//$('.selectPro').click(function (e) {
-//
-//$.ajax({
-//    url:  "http://localhost:8080/product/getAddedProducts",
-//    type: 'GET',
-//    data: {
-//    },
-//    async: false,   //如果不加，无法实现数据传值
-//    // dataType: 'json',
-//    success: function (response) {
-//        var select = $("#select")
-//        select.empty();
-//        var result = JSON.stringify(response);
-//        allProduct = JSON.parse(result);
-//        var arr = allProduct['data'];
-//        var arrList = arr['list'];
-//        var length = arrList.length;
-//        var str =null;
-//        for(var i=0; i<length; i++){
-//            var Id = arrList[i]['productId'];
-//            var name = arrList[i]['productName'];
-////            addSelect(Id,name);//将ID和NAME添加到下拉框中
-////var x = document.getElementById("select");
-////x.selectedIndex = -1;
-//        str += "<option value='" + Id + "'>" + name + "</option>";
-//
-//        }
-//         $("#select").html(str);
-//
-//         str = null;
-//         alert("ddddd");
-//    },
-//    error: function () {
-//        alert("出现错误");
-//    }
-//});
-//})
-//function addSelect(id,name){
-//  $("#select").append("<option value='" + id + "'>" + name + "</option>");
-//
-//}
-//点击下拉框中的选项，显示相应产品和产品下设备信息
-$("#select").change(function(){
+
+$("#searchBtn").click(function(){
     var queryId = $("#select").val();
     $.ajax({
         type: "POST",
         url: "http://localhost:8080/product/getProductInfo",
         data: "productId="+queryId  ,
-//            contentType: "application/json;charset=UTF-8",
         success: function (response) {
             $.ajax({
                 type: "GET",
                 url: "http://localhost:8080/device/getDevByProduct",
                 data:  "productId="+ queryId,
-
-//                             contentType: "application/json;charset=UTF-8",
                 success: function (response) {
 
                     showDeviceById(response);
                 }
-                //        error: function (XmlHttpRequest) {
-                //           alert("44");
-                //               console.log(XmlHttpRequest.status + "uuyyuuyyuuyy");
-                //           }
             });
             showProductById(response);
         },
@@ -266,22 +220,6 @@ $("#select").change(function(){
             console.log(XmlHttpRequest.status + "uuyyuuyyuuyy");
         }
     });
-
-//    $.ajax({
-//        type: "GET",
-//        url: "http://192.168.0.230:8080/device/getDevByProduct",
-//        data:"productId =" + queryId,
-//
-//         contentType: "application/json;charset=UTF-8",
-//        success: function (response) {
-//        alert("33");
-//          showDeviceById(response);
-//        }
-////        error: function (XmlHttpRequest) {
-////           alert("44");
-////               console.log(XmlHttpRequest.status + "uuyyuuyyuuyy");
-////           }
-//    });
 })
 //根据productId查产品
 function showProductById(response){
@@ -345,34 +283,18 @@ function addDev(arr,index){
 //新增设备页面点击确定按钮
 // 新增页面点击确定按钮
 function addDev1(){
-
-
-    // alert($("input#account").val());
-    // alert((document.getElementById("officename")).value);
-    // if (!($("input#usraccount").val()) || (!$("input#usrpassword").val()) || !(document.getElementById("usrofficename")).value || !(document.getElementById("usrrole")).value)
-    // // if(!($("#NewNumber").val()))
-    // {
-    //     alert("除用户姓名和电话号码外，其他各项为必填项");
-    // } else {
-
-
-    var proID = $("#myTr").data("id");
     var myDate = new Date();
-    var time = myDate.getTime();
     var newDevObject = {
-
         "dat": [{
             "deviceIdentifier": $("input#devIdenti").val(),
             "deviceLongitude": $("input#addLong").val(),
             "deviceLatitude": $("input#addLati").val(),
-            "productId":  proID,
-            "timeStamp": time
+            "productId": $("#select1").val(),
         }],
     }
     var newDev = newDevObject['dat'][0];
     console.log(newDev);
     console.log(typeof(newDev));
-
     //向后端传送数据保存
     $.ajax({
         type: "POST",
@@ -444,8 +366,6 @@ function viewDevice(response){
     var result = JSON.stringify(response);
     var deviceView = JSON.parse(result);
     console.log(deviceView);
-
-
     var data = deviceView['data'];
     var meta = deviceView['meta'];
     console.log(JSON.stringify(deviceView));
@@ -458,31 +378,30 @@ function viewDevice(response){
         $("#devLongV").val(data['deviceLongitude']);
         $("#devLatiV").val(data['deviceLatitude']);
         $("#devDataV").val(data['deviceData']);
-        var timeStamp1 = data['timeStamp']
-        var time= timestampToTime(timeStamp1);
-        $("#devTimeV").val(time);
+        var timeStamp1 = data['lastConnectTime']
+        var time= timeStamp1.replace("T"," ");
+		var time1=time.split(".")
+        $("#devTimeV").val(time1[0]);
         var addR = $('#deviceViewModal');
         console.log(addR);
         addR.css('display', 'block');
         addR.attr('class', 'modal fade in');
     }
 }
-
-
 //时间戳转换为时间格式
-function add0(m){return m<10?'0'+ m:m }
-function timestampToTime(timestamp)
-{
+//function add0(m){return m<10?'0'+ m:m }
+//function timestampToTime(timestamp)
+//{
 //shijianchuo是整数，否则要parseInt转换
-    var time = new Date(timestamp);
-    var y = time.getFullYear();
-    var m = time.getMonth()+1;
-    var d = time.getDate();
-    var h = time.getHours();
-    var mm = time.getMinutes();
-    var s = time.getSeconds();
-    return y+'-'+add0(m)+'-'+add0(d)+' '+add0(h)+':'+add0(mm)+':'+add0(s);
-}
+//    var time = new Date(timestamp);
+//    var y = time.getFullYear();
+ //   var m = time.getMonth()+1;
+ //   var d = time.getDate();
+//    var h = time.getHours();
+//    var mm = time.getMinutes();
+//    var s = time.getSeconds();
+//    return y+'-'+add0(m)+'-'+add0(d)+' '+add0(h)+':'+add0(mm)+':'+add0(s);
+//}
 
 //点击编辑按钮
 function devEdit(){

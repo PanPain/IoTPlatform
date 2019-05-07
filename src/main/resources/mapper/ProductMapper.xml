@@ -24,7 +24,7 @@
         FROM PRODUCT
         WHERE PRODUCT_ID = #{productId}
     </delete>
-    <insert id="addProductWithUserId" useGeneratedKeys="true" keyProperty="id" parameterType="edu.xd.ridelab.vo.ProductVO">
+    <insert id="addProductWithUserId" useGeneratedKeys="true" keyProperty="productId" parameterType="edu.xd.ridelab.vo.ProductVO">
         INSERT INTO PRODUCT (FK_USER_ID, PRODUCT_NAME,
                               PRODUCT_CODE, PRODUCT_DESC,
                               PRODUCT_MANUFACTURER, DEVICE_MODEL)
@@ -32,4 +32,8 @@
                 #{productCode}, #{productDesc},
                  #{productManufacturer}, #{deviceModel})
     </insert>
+    <update id="updateProduct" parameterType="edu.xd.ridelab.vo.ProductVO">
+        update PRODUCT SET PRODUCT_SDK = #{productSdk}
+          where PRODUCT_ID = #{productId}
+    </update>
 </mapper>

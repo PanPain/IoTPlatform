@@ -94,8 +94,9 @@ public class ProductController {
         ResponseResult responseResult = new ResponseResult();
 
         Object userId = httpSession.getAttribute("userId");
-        productService.addProduct(productModel,(long)userId);
+        String sdk = productService.addProduct(productModel,(long)userId);
 
+        responseResult.setData(sdk);
         responseResult.setSuccess(true);
         responseResult.setCode(ProductCode.ADD_PRODUCT_SUCCESS.getCode());
         responseResult.setMessage(ProductCode.ADD_PRODUCT_SUCCESS.getMessage());
