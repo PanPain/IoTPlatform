@@ -303,11 +303,11 @@
             <ul class="breadcrumb">
                 <li>
                     <i class="ace-icon fa fa-home home-icon"></i>
-                    <a href="#">Home</a>
+                    Home
                 </li>
 
                 <li>
-                    <a href="#">产品管理</a>
+                    产品管理
                 </li>
                 <li class="active">产品管理</li>
             </ul>
@@ -1032,8 +1032,15 @@
 
 <script type="text/javascript">
     window.jQuery || document.write("<script src='../../static/assets/js/jquery.js'>" + "<" + "/script>");
+    window.jQuery || document.write("<script src='../../static/assets/js/jquery-ui.js'>" + "<" + "/script>");
 </script>
-
+<script>
+    //新增
+    $(function() {
+        $( "#productAddModal1" ).draggable();
+        $( "#productAddModal" ).draggable();
+    });
+</script>
 <!-- <![endif]-->
 
 <script type="text/javascript">
